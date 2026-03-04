@@ -286,21 +286,39 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 @media(max-width:900px){
   nav{padding:16px 24px;}
   .nav-links{display:none;}
-  .hero{grid-template-columns:1fr;padding:100px 24px 60px;gap:40px;}
-  .hero-right{height:280px;}
-  .stats-bar{grid-template-columns:repeat(2,1fr);padding:40px 24px;}
-  .products-section,.why-section,.protocols-section,.contact-section{padding:60px 24px;}
-  .products-grid{grid-template-columns:repeat(2,1fr);}
+  .hero{padding:90px 20px 40px;gap:0;}
+  .hero-left{max-width:100%;}
+  .hero-title,.hero-title-bold,.hero-title-italic{font-size:clamp(36px,9vw,52px);}
+  .hero-sub{max-width:100%;font-size:12px;}
+  .hero-right{margin-top:28px;}
+  .lineup-photo{height:200px;object-position:center 40%;}
+  .stats-bar{grid-template-columns:repeat(2,1fr);padding:32px 20px;gap:24px;}
+  .stat-number{font-size:32px;}
+  .products-section,.why-section,.protocols-section,.contact-section{padding:48px 20px;}
+  .products-grid{grid-template-columns:1fr 1fr;}
+  .product-card{padding:16px 12px;}
+  .product-name{font-size:15px;}
   .why-grid,.protocol-cards{grid-template-columns:1fr;}
-  .footer-main{grid-template-columns:1fr 1fr;padding:40px 24px 24px;gap:32px;}
-  .footer-bottom{flex-direction:column;gap:12px;padding:20px 24px;text-align:center;}
-  .footer-disclaimer{text-align:center;}
-  .page-hero{padding:60px 24px 40px;}
-  .page-content{padding:40px 24px;}
+  .footer-main{grid-template-columns:1fr 1fr;padding:40px 20px 24px;gap:28px;}
+  .footer-bottom{flex-direction:column;gap:12px;padding:20px 20px;text-align:center;}
+  .footer-disclaimer{text-align:center;max-width:100%;}
+  .page-hero{padding:60px 20px 36px;}
+  .page-content{padding:36px 20px;}
   .product-detail-grid{grid-template-columns:1fr;}
+  .detail-meta-grid{grid-template-columns:1fr 1fr;}
   .recon-steps-grid{grid-template-columns:1fr;}
   .affiliate-benefits{grid-template-columns:1fr;}
-  .inner-page .section-divider{margin:0 24px;}
+  .inner-page .section-divider{margin:0 20px;}
+  .section-title{font-size:clamp(24px,6vw,36px);}
+  .contact-methods{flex-direction:column;align-items:center;}
+}
+@media(max-width:480px){
+  .products-grid{grid-template-columns:1fr;}
+  .hero-badges{gap:6px;}
+  .badge{font-size:7px;padding:5px 9px;}
+  .stats-bar{grid-template-columns:repeat(2,1fr);gap:16px;}
+  .lineup-photo{height:170px;}
+  .hero-cta-group{flex-direction:column;align-items:flex-start;gap:14px;}
 }
 </style>
 </head>
@@ -871,6 +889,15 @@ const compounds = [
 ];
 
 // ══════════════════════════════════════
+// INIT — runs on load
+// ══════════════════════════════════════
+window.addEventListener('load', function() {
+  injectFooters();
+  renderProductGrid('home-products-grid');
+  renderProductGrid('full-products-grid');
+});
+
+// ══════════════════════════════════════
 // PAGE SYSTEM
 // ══════════════════════════════════════
 const FOOTER_HTML = `
@@ -993,32 +1020,4 @@ function showProductDetail(id) {
         <div style="margin-top:16px;font-size:10px;color:var(--text-muted);line-height:1.7;font-style:italic;opacity:.7;">For research purposes only. By enquiring you confirm you are an independent researcher.</div>
       </div>
       <div class="product-detail-right">
-        <div class="detail-section">
-          <div class="detail-section-title">Overview</div>
-          <div class="detail-overview">${c.overview}</div>
-        </div>
-        <div class="detail-section">
-          <div class="detail-section-title">Mechanism of Action</div>
-          <div class="mechanism-box">${c.mechanism}</div>
-        </div>
-        <div class="detail-section">
-          <div class="detail-section-title">Peptide Profile</div>
-          <div class="detail-profile-grid">
-            ${c.profile.map(r=>`<div class="detail-profile-row"><span class="detail-profile-key">${r[0]}</span><span class="detail-profile-val">${r[1]}</span></div>`).join('')}
-          </div>
-        </div>
-        <div class="detail-section">
-          <div class="detail-section-title">Key Features & Benefits</div>
-          <ul class="detail-benefits">
-            ${c.benefits.map(b=>`<li>${b}</li>`).join('')}
-          </ul>
-        </div>
-      </div>
-    </div>
-  `;
-
-  showPage('product-detail');
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-// ══════════ 
+        <div class="detail-sectio
