@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exir DNA Ultra Labs — Precision Research Peptides</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="./webpage,HTML Only_files/css2" rel="stylesheet">
 <style>
 :root {
   --cream: #F2EFE9;
@@ -170,7 +169,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
    INNER PAGES COMMON
    ============================================ */
 .inner-page{padding-top:80px;}
-.page-hero{background:var(--navy);padding:100px 64px 60px;position:relative;overflow:hidden;}
+.page-hero{background:var(--navy);padding:80px 64px 60px;position:relative;overflow:hidden;}
 .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(184,146,42,.08) 0%,transparent 60%);}
 .page-hero-eyebrow{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,168,76,.6);margin-bottom:16px;}
 .page-hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,64px);font-weight:300;color:var(--white);line-height:1.05;position:relative;}
@@ -409,74 +408,89 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 .order-ref{background:var(--navy);color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:22px;padding:16px 32px;border-radius:4px;display:inline-block;margin-bottom:32px;letter-spacing:3px;}
 
 
-/* ── DISCLAIMER BANNER ── */
-.disclaimer-bar{background:rgba(13,31,53,0.96);border-bottom:1px solid rgba(184,146,42,0.2);padding:8px 64px;text-align:center;position:fixed;top:57px;left:0;right:0;z-index:299;font-size:9px;color:rgba(192,200,212,0.5);letter-spacing:1.2px;text-transform:uppercase;}
+/* ── AGE GATE ── */
+#age-gate{position:fixed;inset:0;background:#0D1F35;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;}
+.age-gate-box{max-width:520px;width:100%;text-align:center;}
+.age-gate-logo{font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:700;color:#B8922A;letter-spacing:4px;text-transform:uppercase;margin-bottom:24px;}
+.age-gate-line{width:48px;height:1px;background:rgba(184,146,42,0.4);margin:0 auto 32px;}
+.age-gate-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#F2EFE9;margin-bottom:12px;}
+.age-gate-sub{font-size:11px;color:rgba(192,200,212,0.6);line-height:1.9;margin-bottom:32px;font-weight:300;}
+.age-gate-checks{background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:24px;margin-bottom:28px;text-align:left;}
+.age-gate-check{display:flex;align-items:flex-start;gap:14px;cursor:pointer;margin-bottom:16px;}
+.age-gate-check:last-child{margin-bottom:0;}
+.age-gate-check input{margin-top:3px;accent-color:#B8922A;width:16px;height:16px;flex-shrink:0;}
+.age-gate-check span{font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;}
+.age-gate-check strong{color:#F2EFE9;}
+.age-gate-error{display:none;font-size:10px;color:rgba(200,80,80,0.9);margin-bottom:16px;letter-spacing:1px;}
+.age-gate-btn{width:100%;padding:16px;background:#B8922A;color:#0D1F35;border:none;font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-weight:600;margin-bottom:12px;}
+.age-gate-btn:hover{background:#C9A84C;}
+.age-gate-small{font-size:9px;color:rgba(192,200,212,0.25);line-height:1.7;}
+
+/* ── DISCLAIMER BAR ── */
+.disclaimer-bar{background:rgba(13,31,53,0.97);border-bottom:1px solid rgba(184,146,42,0.2);padding:7px 64px;text-align:center;position:fixed;top:57px;left:0;right:0;z-index:299;font-size:9px;color:rgba(192,200,212,0.5);letter-spacing:1.2px;text-transform:uppercase;}
 .disclaimer-bar strong{color:rgba(184,146,42,0.7);}
 
 </style>
 </head>
 <body>
-
-<!-- ══════════════════════════════════════
-     AGE + RESEARCHER GATE
-══════════════════════════════════════ -->
-<div id="age-gate" style="position:fixed;inset:0;background:var(--navy);z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;">
-  <div style="max-width:520px;width:100%;text-align:center;">
-    <div style="font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:4px;text-transform:uppercase;margin-bottom:24px;">Exir DNA Ultra Labs</div>
-    <div style="width:48px;height:1px;background:rgba(184,146,42,0.4);margin:0 auto 32px;"></div>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--cream);margin-bottom:12px;">Restricted Access</h2>
-    <p style="font-size:11px;color:rgba(192,200,212,0.6);line-height:1.9;margin-bottom:32px;font-weight:300;">This website contains information about research compounds available exclusively to qualified independent researchers. Access is restricted to adults aged 18 and over.</p>
-    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:24px;margin-bottom:28px;text-align:left;">
-      <label style="display:flex;align-items:flex-start;gap:14px;cursor:pointer;margin-bottom:16px;">
-        <input type="checkbox" id="gate-age" style="margin-top:3px;accent-color:var(--gold);width:16px;height:16px;flex-shrink:0;">
-        <span style="font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;">I confirm I am <strong style="color:var(--cream);">18 years of age or older</strong></span>
+<div id="age-gate">
+  <div class="age-gate-box">
+    <div class="age-gate-logo">Exir DNA Ultra Labs</div>
+    <div class="age-gate-line"></div>
+    <h2 class="age-gate-title">Restricted Access</h2>
+    <p class="age-gate-sub">This website contains information about research compounds available exclusively to qualified independent researchers. Access is restricted to adults aged 18 and over.</p>
+    <div class="age-gate-checks">
+      <label class="age-gate-check">
+        <input type="checkbox" id="gate-age">
+        <span>I confirm I am <strong>18 years of age or older</strong></span>
       </label>
-      <label style="display:flex;align-items:flex-start;gap:14px;cursor:pointer;margin-bottom:16px;">
-        <input type="checkbox" id="gate-researcher" style="margin-top:3px;accent-color:var(--gold);width:16px;height:16px;flex-shrink:0;">
-        <span style="font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;">I am an <strong style="color:var(--cream);">independent researcher</strong> and understand these compounds are sold strictly for <strong style="color:var(--cream);">laboratory research purposes only</strong> — not for human or animal consumption</span>
+      <label class="age-gate-check">
+        <input type="checkbox" id="gate-researcher">
+        <span>I am an <strong>independent researcher</strong> and understand these compounds are sold strictly for <strong>laboratory research purposes only</strong> — not for human or animal consumption</span>
       </label>
-      <label style="display:flex;align-items:flex-start;gap:14px;cursor:pointer;">
-        <input type="checkbox" id="gate-terms" style="margin-top:3px;accent-color:var(--gold);width:16px;height:16px;flex-shrink:0;">
-        <span style="font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;">I accept the <strong style="color:var(--cream);">Terms & Conditions</strong> and take full personal responsibility for compliance with the laws of my jurisdiction</span>
+      <label class="age-gate-check">
+        <input type="checkbox" id="gate-terms">
+        <span>I accept the <strong>Terms & Conditions</strong> and take full personal responsibility for compliance with the laws of my jurisdiction</span>
       </label>
     </div>
-    <div id="gate-error" style="display:none;font-size:10px;color:rgba(200,80,80,0.9);margin-bottom:16px;letter-spacing:1px;">Please confirm all three declarations to continue.</div>
-    <button onclick="passAgeGate()" style="width:100%;padding:16px;background:var(--gold);color:var(--navy);border:none;font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-weight:600;margin-bottom:12px;transition:background .2s;">Enter Research Portal →</button>
-    <p style="font-size:9px;color:rgba(192,200,212,0.25);line-height:1.7;">By entering you confirm you have read and agree to our terms of use. This site uses a session cookie to remember your confirmation.</p>
+    <div class="age-gate-error" id="gate-error">Please confirm all three declarations to continue.</div>
+    <button class="age-gate-btn" onclick="passAgeGate()">Enter Research Portal →</button>
+    <p class="age-gate-small">By entering you confirm you have read and agree to our terms of use.</p>
   </div>
 </div>
+
 
 <!-- ══════════════════════════════════════
      NAVIGATION
 ══════════════════════════════════════ -->
 <nav>
-  <div class="nav-logo" onclick="showPage('home')">
+  <div class="nav-logo" onclick="showPage(&#39;home&#39;)">
     <svg viewBox="0 0 28 36" fill="none" width="22" height="28">
-      <circle cx="14" cy="5.5" r="4.5" fill="url(#ngl)"/>
-      <path d="M5 16C5 11 9.5 8.5 14 8.5C18.5 8.5 23 11 23 16V25H20V36H8V25H5V16Z" fill="url(#ngl)" opacity=".85"/>
-      <path d="M5 17H2.5L4 25H5V17Z" fill="url(#ngl)" opacity=".5"/>
-      <path d="M23 17H25.5L24 25H23V17Z" fill="url(#ngl)" opacity=".5"/>
-      <defs><linearGradient id="ngl" x1="2" y1="0" x2="26" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4a5568"/><stop offset="100%" stop-color="#1a2f47"/></linearGradient></defs>
+      <circle cx="14" cy="5.5" r="4.5" fill="url(#ngl)"></circle>
+      <path d="M5 16C5 11 9.5 8.5 14 8.5C18.5 8.5 23 11 23 16V25H20V36H8V25H5V16Z" fill="url(#ngl)" opacity=".85"></path>
+      <path d="M5 17H2.5L4 25H5V17Z" fill="url(#ngl)" opacity=".5"></path>
+      <path d="M23 17H25.5L24 25H23V17Z" fill="url(#ngl)" opacity=".5"></path>
+      <defs><lineargradient id="ngl" x1="2" y1="0" x2="26" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4a5568"></stop><stop offset="100%" stop-color="#1a2f47"></stop></lineargradient></defs>
     </svg>
     <div class="nav-brand">Exir DNA Ultra Labs</div>
   </div>
   <ul class="nav-links">
-    <li><a onclick="showPage('products')">Products</a></li>
-    <li><a onclick="showPage('protocols-page')">Protocols</a></li>
-    <li><a onclick="showPage('blood-guide')">Blood Tests</a></li>
-    <li><a onclick="showPage('recon-guide')">Recon Guide</a></li>
-    <li><a onclick="showPage('calculator-page')">Calculator</a></li>
-    <li><a onclick="showPage('faq')">FAQ</a></li>
-    <li><a onclick="showPage('contact-page')" class="nav-cta">Enquire</a></li>
+    <li><a onclick="showPage(&#39;products&#39;)">Products</a></li>
+    <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+    <li><a onclick="showPage(&#39;blood-guide&#39;)">Blood Tests</a></li>
+    <li><a onclick="showPage(&#39;recon-guide&#39;)">Recon Guide</a></li>
+    <li><a onclick="showPage(&#39;calculator-page&#39;)">Calculator</a></li>
+    <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+    <li><a onclick="showPage(&#39;contact-page&#39;)" class="nav-cta">Enquire</a></li>
     <li><button class="cart-btn" onclick="openCart()">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg>
       Cart
       <span class="cart-count hidden" id="cart-count">0</span>
     </button></li>
   </ul>
 </nav>
+<div class="disclaimer-bar"><strong>Research Compounds Only</strong> &nbsp;·&nbsp; Not for human or animal consumption &nbsp;·&nbsp; Independent laboratory research use only &nbsp;·&nbsp; 18+ researchers only</div>
 
-<div class="disclaimer-bar"><strong>Research Compounds Only</strong> &nbsp;·&nbsp; Not for human or animal consumption &nbsp;·&nbsp; For independent laboratory research use only &nbsp;·&nbsp; 18+ researchers only</div>
 
 <!-- ══════════════════════════════════════
      CART DRAWER
@@ -526,57 +540,57 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
           <div class="badge"><div class="badge-dot"></div>Protocol Included</div>
         </div>
         <div class="hero-cta-group">
-          <span class="btn-primary" onclick="showPage('products')">View Products</span>
-          <span class="btn-secondary-link" onclick="showPage('protocols-page')">Explore Protocols →</span>
+          <span class="btn-primary" onclick="showPage(&#39;products&#39;)">View Products</span>
+          <span class="btn-secondary-link" onclick="showPage(&#39;protocols-page&#39;)">Explore Protocols →</span>
         </div>
       </div>
             <div class="hero-right">
         <div class="hero-geometric">
           <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="geo-svg">
             <defs>
-              <linearGradient id="gGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#B8922A;stop-opacity:0.8"/>
-                <stop offset="100%" style="stop-color:#C9A84C;stop-opacity:0.3"/>
-              </linearGradient>
-              <filter id="glow"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <lineargradient id="gGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#B8922A;stop-opacity:0.8"></stop>
+                <stop offset="100%" style="stop-color:#C9A84C;stop-opacity:0.3"></stop>
+              </lineargradient>
+              <filter id="glow"><fegaussianblur stdDeviation="3" result="coloredBlur"></fegaussianblur><femerge><femergenode in="coloredBlur"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
             </defs>
-            <circle cx="250" cy="250" r="220" fill="none" stroke="url(#gGold)" stroke-width="1" opacity="0.3"/>
-            <circle cx="250" cy="250" r="190" fill="none" stroke="#B8922A" stroke-width="0.5" opacity="0.2"/>
-            <line x1="180" y1="80" x2="180" y2="420" stroke="#B8922A" stroke-width="1.5" opacity="0.4"/>
-            <line x1="320" y1="80" x2="320" y2="420" stroke="#B8922A" stroke-width="1.5" opacity="0.4"/>
-            <line x1="180" y1="110" x2="320" y2="140" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <line x1="180" y1="155" x2="320" y2="125" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <line x1="180" y1="175" x2="320" y2="205" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <line x1="180" y1="220" x2="320" y2="190" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <line x1="180" y1="240" x2="320" y2="270" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <line x1="180" y1="285" x2="320" y2="255" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <line x1="180" y1="305" x2="320" y2="335" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <line x1="180" y1="350" x2="320" y2="320" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-            <polygon points="250,170 290,193 290,240 250,263 210,240 210,193" fill="none" stroke="url(#gGold)" stroke-width="2" filter="url(#glow)"/>
-            <polygon points="250,185 278,200 278,232 250,247 222,232 222,200" fill="rgba(184,146,42,0.06)"/>
-            <circle cx="250" cy="216" r="18" fill="rgba(13,31,53,0.8)" stroke="#B8922A" stroke-width="1.5"/>
-            <circle cx="250" cy="216" r="8" fill="#B8922A" opacity="0.7"/>
-            <ellipse cx="250" cy="216" rx="45" ry="18" fill="none" stroke="#B8922A" stroke-width="1" opacity="0.4" transform="rotate(-30,250,216)"/>
-            <ellipse cx="250" cy="216" rx="45" ry="18" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.3" transform="rotate(30,250,216)"/>
-            <circle cx="295" cy="216" r="4" fill="#C9A84C" opacity="0.9" filter="url(#glow)"><animateTransform attributeName="transform" type="rotate" from="0 250 216" to="360 250 216" dur="6s" repeatCount="indefinite"/></circle>
-            <circle cx="212" cy="232" r="3" fill="#B8922A" opacity="0.7" filter="url(#glow)"><animateTransform attributeName="transform" type="rotate" from="120 250 216" to="480 250 216" dur="4s" repeatCount="indefinite"/></circle>
-            <g opacity="0.85"><circle cx="130" cy="160" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"/><text x="130" y="156" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">99%+</text><text x="130" y="168" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">PURITY</text></g>
-            <g opacity="0.85"><circle cx="370" cy="155" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"/><text x="370" y="151" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">3RD</text><text x="370" y="163" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">PARTY TESTED</text></g>
-            <g opacity="0.85"><circle cx="110" cy="310" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"/><text x="110" y="306" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">EU</text><text x="110" y="318" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">SHIPPED</text></g>
-            <g opacity="0.85"><circle cx="388" cy="310" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"/><text x="388" y="306" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">DOSE</text><text x="388" y="318" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">CARDS INCL.</text></g>
-            <g opacity="0.85"><circle cx="250" cy="420" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"/><text x="250" y="416" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">BLOOD</text><text x="250" y="428" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">WORK FIRST</text></g>
-            <line x1="222" y1="193" x2="158" y2="166" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"/>
-            <line x1="278" y1="193" x2="342" y2="163" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"/>
-            <line x1="210" y1="230" x2="138" y2="300" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"/>
-            <line x1="290" y1="230" x2="360" y2="298" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"/>
-            <line x1="250" y1="247" x2="250" y2="392" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"/>
+            <circle cx="250" cy="250" r="220" fill="none" stroke="url(#gGold)" stroke-width="1" opacity="0.3"></circle>
+            <circle cx="250" cy="250" r="190" fill="none" stroke="#B8922A" stroke-width="0.5" opacity="0.2"></circle>
+            <line x1="180" y1="80" x2="180" y2="420" stroke="#B8922A" stroke-width="1.5" opacity="0.4"></line>
+            <line x1="320" y1="80" x2="320" y2="420" stroke="#B8922A" stroke-width="1.5" opacity="0.4"></line>
+            <line x1="180" y1="110" x2="320" y2="140" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <line x1="180" y1="155" x2="320" y2="125" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <line x1="180" y1="175" x2="320" y2="205" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <line x1="180" y1="220" x2="320" y2="190" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <line x1="180" y1="240" x2="320" y2="270" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <line x1="180" y1="285" x2="320" y2="255" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <line x1="180" y1="305" x2="320" y2="335" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <line x1="180" y1="350" x2="320" y2="320" stroke="#C9A84C" stroke-width="1" opacity="0.5"></line>
+            <polygon points="250,170 290,193 290,240 250,263 210,240 210,193" fill="none" stroke="url(#gGold)" stroke-width="2" filter="url(#glow)"></polygon>
+            <polygon points="250,185 278,200 278,232 250,247 222,232 222,200" fill="rgba(184,146,42,0.06)"></polygon>
+            <circle cx="250" cy="216" r="18" fill="rgba(13,31,53,0.8)" stroke="#B8922A" stroke-width="1.5"></circle>
+            <circle cx="250" cy="216" r="8" fill="#B8922A" opacity="0.7"></circle>
+            <ellipse cx="250" cy="216" rx="45" ry="18" fill="none" stroke="#B8922A" stroke-width="1" opacity="0.4" transform="rotate(-30,250,216)"></ellipse>
+            <ellipse cx="250" cy="216" rx="45" ry="18" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.3" transform="rotate(30,250,216)"></ellipse>
+            <circle cx="295" cy="216" r="4" fill="#C9A84C" opacity="0.9" filter="url(#glow)"><animatetransform attributeName="transform" type="rotate" from="0 250 216" to="360 250 216" dur="6s" repeatCount="indefinite"></animatetransform></circle>
+            <circle cx="212" cy="232" r="3" fill="#B8922A" opacity="0.7" filter="url(#glow)"><animatetransform attributeName="transform" type="rotate" from="120 250 216" to="480 250 216" dur="4s" repeatCount="indefinite"></animatetransform></circle>
+            <g opacity="0.85"><circle cx="130" cy="160" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"></circle><text x="130" y="156" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">99%+</text><text x="130" y="168" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">PURITY</text></g>
+            <g opacity="0.85"><circle cx="370" cy="155" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"></circle><text x="370" y="151" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">3RD</text><text x="370" y="163" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">PARTY TESTED</text></g>
+            <g opacity="0.85"><circle cx="110" cy="310" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"></circle><text x="110" y="306" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">EU</text><text x="110" y="318" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">SHIPPED</text></g>
+            <g opacity="0.85"><circle cx="388" cy="310" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"></circle><text x="388" y="306" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">DOSE</text><text x="388" y="318" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">CARDS INCL.</text></g>
+            <g opacity="0.85"><circle cx="250" cy="420" r="28" fill="rgba(13,31,53,0.85)" stroke="#B8922A" stroke-width="1.2"></circle><text x="250" y="416" text-anchor="middle" fill="#C9A84C" font-size="7" font-family="Montserrat,sans-serif" font-weight="600" letter-spacing="1">BLOOD</text><text x="250" y="428" text-anchor="middle" fill="rgba(192,200,212,0.7)" font-size="6" font-family="Montserrat,sans-serif" letter-spacing="0.5">WORK FIRST</text></g>
+            <line x1="222" y1="193" x2="158" y2="166" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"></line>
+            <line x1="278" y1="193" x2="342" y2="163" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"></line>
+            <line x1="210" y1="230" x2="138" y2="300" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"></line>
+            <line x1="290" y1="230" x2="360" y2="298" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"></line>
+            <line x1="250" y1="247" x2="250" y2="392" stroke="#B8922A" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,3"></line>
             <text x="250" y="480" text-anchor="middle" fill="rgba(184,146,42,0.35)" font-size="9" font-family="Montserrat,sans-serif" letter-spacing="5" font-weight="300">EXIR DNA ULTRA LABS</text>
           </svg>
         </div>
         </div>
       </div>
-  </div>
-</section>
+  </section></div>
+
 
   <div class="stats-bar">
     <div><div class="stat-number">99%+</div><div class="stat-label">Purity Guaranteed</div></div>
@@ -592,7 +606,247 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <h2 class="section-title">Every Compound. <strong>Research Grade.</strong></h2>
         <p class="section-sub">Click any compound for full profile, mechanism of action and dosing information.</p>
       </div>
-      <div class="products-grid" id="home-products-grid"></div>
+      <div class="products-grid" id="home-products-grid">
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;bpc157&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">BPC-157</div>
+        <div class="product-info">Healing Peptide</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;bpc157&#39;)" style="cursor:pointer;">
+          <div class="product-price">€70</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;bpc157&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;bpc157&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;tb500frag&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">TB-500 Frag</div>
+        <div class="product-info">Healing &amp; Recovery</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;tb500frag&#39;)" style="cursor:pointer;">
+          <div class="product-price">€80</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;tb500frag&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;tb500frag&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;tb4&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">TB-4</div>
+        <div class="product-info">Healing &amp; Recovery</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;tb4&#39;)" style="cursor:pointer;">
+          <div class="product-price">€90</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;tb4&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;tb4&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;retatrutide&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Retatrutide</div>
+        <div class="product-info">Metabolic &amp; GLP-1</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;retatrutide&#39;)" style="cursor:pointer;">
+          <div class="product-price">€135</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;retatrutide&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;retatrutide&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ghkcu50&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">GHK-Cu</div>
+        <div class="product-info">Anti-Ageing &amp; Skin</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ghkcu50&#39;)" style="cursor:pointer;">
+          <div class="product-price">€55</div>
+          <div class="product-size">50mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ghkcu50&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ghkcu50&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ghkcu100&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">GHK-Cu 100mg</div>
+        <div class="product-info">Anti-Ageing &amp; Skin</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ghkcu100&#39;)" style="cursor:pointer;">
+          <div class="product-price">€85</div>
+          <div class="product-size">100mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ghkcu100&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ghkcu100&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;cjcdac&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">CJC-DAC</div>
+        <div class="product-info">Growth Hormone</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;cjcdac&#39;)" style="cursor:pointer;">
+          <div class="product-price">€55</div>
+          <div class="product-size">50mg</div>
+        </div>
+        <button onclick="addToCart(&#39;cjcdac&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;cjcdac&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ipamorelin&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Ipamorelin</div>
+        <div class="product-info">Growth Hormone</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ipamorelin&#39;)" style="cursor:pointer;">
+          <div class="product-price">€50</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ipamorelin&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ipamorelin&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;thymosin&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Thymosin Alpha-1</div>
+        <div class="product-info">Immune Modulation</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;thymosin&#39;)" style="cursor:pointer;">
+          <div class="product-price">€120</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;thymosin&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;thymosin&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;epithalon&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Epithalon</div>
+        <div class="product-info">Longevity &amp; Telomere</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;epithalon&#39;)" style="cursor:pointer;">
+          <div class="product-price">€55</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;epithalon&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;epithalon&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;motsc&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">MoTS-C</div>
+        <div class="product-info">Mitochondrial &amp; Metabolic</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;motsc&#39;)" style="cursor:pointer;">
+          <div class="product-price">€95</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;motsc&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;motsc&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ss31&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">SS-31</div>
+        <div class="product-info">Mitochondrial Support</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ss31&#39;)" style="cursor:pointer;">
+          <div class="product-price">€195</div>
+          <div class="product-size">50mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ss31&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ss31&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;hcg&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">HCG</div>
+        <div class="product-info">Hormonal Support</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;hcg&#39;)" style="cursor:pointer;">
+          <div class="product-price">€30</div>
+          <div class="product-size">2000iu</div>
+        </div>
+        <button onclick="addToCart(&#39;hcg&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;hcg&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;tesamorelin&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Tesamorelin</div>
+        <div class="product-info">Growth Hormone / GHRH</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;tesamorelin&#39;)" style="cursor:pointer;">
+          <div class="product-price">€100</div>
+          <div class="product-size">20mg</div>
+        </div>
+        <button onclick="addToCart(&#39;tesamorelin&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;tesamorelin&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;klow&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Klow Blend</div>
+        <div class="product-info">Multi-Peptide Blend</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;klow&#39;)" style="cursor:pointer;">
+          <div class="product-price">€195</div>
+          <div class="product-size">80mg</div>
+        </div>
+        <button onclick="addToCart(&#39;klow&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;klow&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;bac&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Bacteriostatic Water</div>
+        <div class="product-info">Reconstitution Solution</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;bac&#39;)" style="cursor:pointer;">
+          <div class="product-price">€10</div>
+          <div class="product-size">10mL</div>
+        </div>
+        <button onclick="addToCart(&#39;bac&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;bac&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  </div>
     </div>
   </section>
 
@@ -618,13 +872,13 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <p class="section-sub">Doctor-consulted protocol stacks. Each compound chosen with purpose, sequenced for maximum effect.</p>
       </div>
       <div class="protocol-cards">
-        <div class="protocol-card featured"><div class="protocol-tag">⬡ Most Popular</div><div class="protocol-name">Rest & Recovery Stack</div><div class="protocol-desc">Full mitochondrial reset for overtrained athletes. Hormonal support, cellular repair, and sleep optimisation in one 11-week protocol.</div><div class="protocol-compounds"><span class="compound-tag">SS-31</span><span class="compound-tag">MoTS-C</span><span class="compound-tag">Epithalon</span><span class="compound-tag">Tesamorelin</span><span class="compound-tag">HCG</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire about this protocol →</span></div>
-        <div class="protocol-card"><div class="protocol-tag">⬡ Healing</div><div class="protocol-name">Injury Repair Protocol</div><div class="protocol-desc">Tissue repair and inflammation reduction. Ideal for musculoskeletal injuries, post-surgery recovery, and chronic joint issues.</div><div class="protocol-compounds"><span class="compound-tag">BPC-157</span><span class="compound-tag">TB-500</span><span class="compound-tag">GHK-Cu</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire about this protocol →</span></div>
-        <div class="protocol-card"><div class="protocol-tag">⬡ Longevity</div><div class="protocol-name">Anti-Ageing Protocol</div><div class="protocol-desc">Telomere support, immune modulation and cellular rejuvenation. For researchers focused on healthspan over lifespan.</div><div class="protocol-compounds"><span class="compound-tag">Epithalon</span><span class="compound-tag">Thymosin Alpha-1</span><span class="compound-tag">GHK-Cu</span><span class="compound-tag">SS-31</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire about this protocol →</span></div>
-        <div class="protocol-card"><div class="protocol-tag">⬡ Entry Level</div><div class="protocol-name">Wolverine Stack</div><div class="protocol-desc">The classic beginner healing stack. BPC-157 and TB-500 together create a powerful synergistic repair environment. The go-to protocol for injuries, chronic pain, and accelerated recovery.</div><div class="protocol-compounds"><span class="compound-tag">BPC-157</span><span class="compound-tag">TB-500</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire about this protocol →</span></div>
-        <div class="protocol-card"><div class="protocol-tag">⬡ Entry Level</div><div class="protocol-name">GH Starter Stack</div><div class="protocol-desc">The ideal introduction to growth hormone optimisation. CJC-DAC once or twice weekly with nightly Ipamorelin creates synergistic GH pulses for body composition, sleep quality and recovery.</div><div class="protocol-compounds"><span class="compound-tag">CJC-DAC</span><span class="compound-tag">Ipamorelin</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire about this protocol →</span></div>
+        <div class="protocol-card featured"><div class="protocol-tag">⬡ Most Popular</div><div class="protocol-name">Rest &amp; Recovery Stack</div><div class="protocol-desc">Full mitochondrial reset for overtrained athletes. Hormonal support, cellular repair, and sleep optimisation in one 11-week protocol.</div><div class="protocol-compounds"><span class="compound-tag">SS-31</span><span class="compound-tag">MoTS-C</span><span class="compound-tag">Epithalon</span><span class="compound-tag">Tesamorelin</span><span class="compound-tag">HCG</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire about this protocol →</span></div>
+        <div class="protocol-card"><div class="protocol-tag">⬡ Healing</div><div class="protocol-name">Injury Repair Protocol</div><div class="protocol-desc">Tissue repair and inflammation reduction. Ideal for musculoskeletal injuries, post-surgery recovery, and chronic joint issues.</div><div class="protocol-compounds"><span class="compound-tag">BPC-157</span><span class="compound-tag">TB-500</span><span class="compound-tag">GHK-Cu</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire about this protocol →</span></div>
+        <div class="protocol-card"><div class="protocol-tag">⬡ Longevity</div><div class="protocol-name">Anti-Ageing Protocol</div><div class="protocol-desc">Telomere support, immune modulation and cellular rejuvenation. For researchers focused on healthspan over lifespan.</div><div class="protocol-compounds"><span class="compound-tag">Epithalon</span><span class="compound-tag">Thymosin Alpha-1</span><span class="compound-tag">GHK-Cu</span><span class="compound-tag">SS-31</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire about this protocol →</span></div>
+        <div class="protocol-card"><div class="protocol-tag">⬡ Entry Level</div><div class="protocol-name">Wolverine Stack</div><div class="protocol-desc">The classic beginner healing stack. BPC-157 and TB-500 together create a powerful synergistic repair environment. The go-to protocol for injuries, chronic pain, and accelerated recovery.</div><div class="protocol-compounds"><span class="compound-tag">BPC-157</span><span class="compound-tag">TB-500</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire about this protocol →</span></div>
+        <div class="protocol-card"><div class="protocol-tag">⬡ Entry Level</div><div class="protocol-name">GH Starter Stack</div><div class="protocol-desc">The ideal introduction to growth hormone optimisation. CJC-DAC once or twice weekly with nightly Ipamorelin creates synergistic GH pulses for body composition, sleep quality and recovery.</div><div class="protocol-compounds"><span class="compound-tag">CJC-DAC</span><span class="compound-tag">Ipamorelin</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire about this protocol →</span></div>
       </div>
-      <div style="text-align:center;margin-top:32px;"><span class="btn-outline" onclick="showPage('protocols-page')">View All Protocols →</span></div>
+      <div style="text-align:center;margin-top:32px;"><span class="btn-outline" onclick="showPage(&#39;protocols-page&#39;)">View All Protocols →</span></div>
     </div>
   </section>
 
@@ -639,32 +893,32 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:28px 24px;">
           <div style="color:var(--gold);font-size:18px;margin-bottom:14px;">★★★★★</div>
           <p style="font-size:12px;color:rgba(192,200,212,0.8);line-height:1.9;font-weight:300;margin-bottom:20px;font-style:italic;">"The dosing cards alone are worth it. Never had something this clearly laid out. SS-31 protocol changed my recovery completely — eight weeks in and I'm training like I'm ten years younger."</p>
-          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:14px;">N</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Nick.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Triathlete · Rest &amp; Recovery Stack</div></div></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:&#39;Cormorant Garamond&#39;,serif;font-weight:700;color:var(--gold);font-size:14px;">N</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Nick.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Triathlete · Rest &amp; Recovery Stack</div></div></div>
         </div>
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:28px 24px;">
           <div style="color:var(--gold);font-size:18px;margin-bottom:14px;">★★★★★</div>
           <p style="font-size:12px;color:rgba(192,200,212,0.8);line-height:1.9;font-weight:300;margin-bottom:20px;font-style:italic;">"I've tried plenty of suppliers. This is different — bloodwork-first approach, real protocols, actual purity documentation. The Klow blend on my knee injury was remarkable. Back to full training in six weeks."</p>
-          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:14px;">S</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Spike R.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Injury Repair Protocol</div></div></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:&#39;Cormorant Garamond&#39;,serif;font-weight:700;color:var(--gold);font-size:14px;">S</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Spike R.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Injury Repair Protocol</div></div></div>
         </div>
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:28px 24px;">
           <div style="color:var(--gold);font-size:18px;margin-bottom:14px;">★★★★★</div>
           <p style="font-size:12px;color:rgba(192,200,212,0.8);line-height:1.9;font-weight:300;margin-bottom:20px;font-style:italic;">"The GHK-Cu protocol for skin and hair was something I was sceptical about. The results after 10 weeks were undeniable. The two-phase titration card made it completely stress-free."</p>
-          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:14px;">T</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Teena.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Anti-Ageing &amp; Skin Protocol</div></div></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:&#39;Cormorant Garamond&#39;,serif;font-weight:700;color:var(--gold);font-size:14px;">T</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Teena.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Anti-Ageing &amp; Skin Protocol</div></div></div>
         </div>
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:28px 24px;">
           <div style="color:var(--gold);font-size:18px;margin-bottom:14px;">★★★★★</div>
           <p style="font-size:12px;color:rgba(192,200,212,0.8);line-height:1.9;font-weight:300;margin-bottom:20px;font-style:italic;">"Third time ordering. Every batch consistent. The blood test guidance section is what separates these guys — they actually explain what your results mean and build around them."</p>
-          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:14px;">G</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">George M.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Multiple Protocols</div></div></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:&#39;Cormorant Garamond&#39;,serif;font-weight:700;color:var(--gold);font-size:14px;">G</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">George M.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Multiple Protocols</div></div></div>
         </div>
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:28px 24px;">
           <div style="color:var(--gold);font-size:18px;margin-bottom:14px;">★★★★★</div>
           <p style="font-size:12px;color:rgba(192,200,212,0.8);line-height:1.9;font-weight:300;margin-bottom:20px;font-style:italic;">"Started with the Wolverine Stack post-surgery. Healing was noticeably faster than my last op. Surgeon commented on the tissue quality. On to a full recovery protocol now."</p>
-          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:14px;">G</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Greg T.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Wolverine Stack · Post-Surgery</div></div></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:&#39;Cormorant Garamond&#39;,serif;font-weight:700;color:var(--gold);font-size:14px;">G</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Greg T.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Wolverine Stack · Post-Surgery</div></div></div>
         </div>
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:28px 24px;">
           <div style="color:var(--gold);font-size:18px;margin-bottom:14px;">★★★★★</div>
           <p style="font-size:12px;color:rgba(192,200,212,0.8);line-height:1.9;font-weight:300;margin-bottom:20px;font-style:italic;">"The Retatrutide protocol was a game changer for body composition. Down 8kg of visceral fat in 12 weeks with no muscle loss. The personalised card and email support made it simple to follow."</p>
-          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--gold);font-size:14px;">S</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Scott V.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Body Composition Stack</div></div></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:36px;height:36px;border-radius:50%;background:rgba(184,146,42,0.2);border:1px solid rgba(184,146,42,0.4);display:flex;align-items:center;justify-content:center;font-family:&#39;Cormorant Garamond&#39;,serif;font-weight:700;color:var(--gold);font-size:14px;">S</div><div><div style="font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--cream);text-transform:uppercase;">Scott V.</div><div style="font-size:9px;color:rgba(192,200,212,0.4);letter-spacing:1px;text-transform:uppercase;">Body Composition Stack</div></div></div>
         </div>
       </div>
       <div style="text-align:center;margin-top:32px;font-size:10px;color:rgba(192,200,212,0.35);letter-spacing:1.5px;text-transform:uppercase;">Nick · Spike · Teena · George · Greg · Scott · Lina · and many more satisfied researchers</div>
@@ -676,7 +930,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
     <div class="contact-title">Ready to <strong>Begin?</strong></div>
     <p class="contact-sub">Send us your bloodwork and research goals. We'll build your protocol, prepare your compounds, and have your personalised dosing cards ready before your order ships.</p>
     <div class="contact-methods">
-      <a href="mailto:sales@exirdna.com" class="contact-btn">✉ &nbsp;Email Us</a>
+      <a href="/cdn-cgi/l/email-protection#e59684898096a5809d8c97818b84cb868a88" class="contact-btn">✉ &nbsp;Email Us</a>
       <a href="https://t.me/Exirdnaultra" class="contact-btn">✈ &nbsp;Telegram</a>
       <a href="https://wa.me/" class="contact-btn">📱 &nbsp;WhatsApp</a>
     </div>
@@ -684,8 +938,49 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </section>
 
   <div class="gold-line"></div>
-  <div id="home-footer"></div>
-</div>
+  <div id="home-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
+
 
 <!-- ══════════════════════════════════════
      PAGE: ALL PRODUCTS
@@ -693,15 +988,296 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-products" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Full Catalogue</div>
       <h1 class="page-hero-title">Every Compound. <strong>Research Grade.</strong></h1>
       <p class="page-hero-sub">All compounds third-party tested. Certificates of analysis available on request. Click any compound for full profile and dosing information.</p>
     </div>
     <div class="page-content">
-      <div class="products-grid" id="full-products-grid"></div>
+      <div class="products-grid" id="full-products-grid">
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;bpc157&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">BPC-157</div>
+        <div class="product-info">Healing Peptide</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;bpc157&#39;)" style="cursor:pointer;">
+          <div class="product-price">€70</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;bpc157&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;bpc157&#39;)" style="cursor:pointer;">›</div>
+      </div>
     </div>
-    <div id="products-footer"></div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;tb500frag&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">TB-500 Frag</div>
+        <div class="product-info">Healing &amp; Recovery</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;tb500frag&#39;)" style="cursor:pointer;">
+          <div class="product-price">€80</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;tb500frag&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;tb500frag&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;tb4&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">TB-4</div>
+        <div class="product-info">Healing &amp; Recovery</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;tb4&#39;)" style="cursor:pointer;">
+          <div class="product-price">€90</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;tb4&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;tb4&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;retatrutide&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Retatrutide</div>
+        <div class="product-info">Metabolic &amp; GLP-1</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;retatrutide&#39;)" style="cursor:pointer;">
+          <div class="product-price">€135</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;retatrutide&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;retatrutide&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ghkcu50&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">GHK-Cu</div>
+        <div class="product-info">Anti-Ageing &amp; Skin</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ghkcu50&#39;)" style="cursor:pointer;">
+          <div class="product-price">€55</div>
+          <div class="product-size">50mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ghkcu50&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ghkcu50&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ghkcu100&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">GHK-Cu 100mg</div>
+        <div class="product-info">Anti-Ageing &amp; Skin</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ghkcu100&#39;)" style="cursor:pointer;">
+          <div class="product-price">€85</div>
+          <div class="product-size">100mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ghkcu100&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ghkcu100&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;cjcdac&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">CJC-DAC</div>
+        <div class="product-info">Growth Hormone</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;cjcdac&#39;)" style="cursor:pointer;">
+          <div class="product-price">€55</div>
+          <div class="product-size">50mg</div>
+        </div>
+        <button onclick="addToCart(&#39;cjcdac&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;cjcdac&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ipamorelin&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Ipamorelin</div>
+        <div class="product-info">Growth Hormone</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ipamorelin&#39;)" style="cursor:pointer;">
+          <div class="product-price">€50</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ipamorelin&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ipamorelin&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;thymosin&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Thymosin Alpha-1</div>
+        <div class="product-info">Immune Modulation</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;thymosin&#39;)" style="cursor:pointer;">
+          <div class="product-price">€120</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;thymosin&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;thymosin&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;epithalon&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Epithalon</div>
+        <div class="product-info">Longevity &amp; Telomere</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;epithalon&#39;)" style="cursor:pointer;">
+          <div class="product-price">€55</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;epithalon&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;epithalon&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;motsc&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">MoTS-C</div>
+        <div class="product-info">Mitochondrial &amp; Metabolic</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;motsc&#39;)" style="cursor:pointer;">
+          <div class="product-price">€95</div>
+          <div class="product-size">10mg</div>
+        </div>
+        <button onclick="addToCart(&#39;motsc&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;motsc&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;ss31&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">SS-31</div>
+        <div class="product-info">Mitochondrial Support</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;ss31&#39;)" style="cursor:pointer;">
+          <div class="product-price">€195</div>
+          <div class="product-size">50mg</div>
+        </div>
+        <button onclick="addToCart(&#39;ss31&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;ss31&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;hcg&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">HCG</div>
+        <div class="product-info">Hormonal Support</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;hcg&#39;)" style="cursor:pointer;">
+          <div class="product-price">€30</div>
+          <div class="product-size">2000iu</div>
+        </div>
+        <button onclick="addToCart(&#39;hcg&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;hcg&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;tesamorelin&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Tesamorelin</div>
+        <div class="product-info">Growth Hormone / GHRH</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;tesamorelin&#39;)" style="cursor:pointer;">
+          <div class="product-price">€100</div>
+          <div class="product-size">20mg</div>
+        </div>
+        <button onclick="addToCart(&#39;tesamorelin&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;tesamorelin&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;klow&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Klow Blend</div>
+        <div class="product-info">Multi-Peptide Blend</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;klow&#39;)" style="cursor:pointer;">
+          <div class="product-price">€195</div>
+          <div class="product-size">80mg</div>
+        </div>
+        <button onclick="addToCart(&#39;klow&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;klow&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div onclick="showProductDetail(&#39;bac&#39;)" style="flex:1;cursor:pointer;">
+        <div class="product-name">Bacteriostatic Water</div>
+        <div class="product-info">Reconstitution Solution</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div onclick="showProductDetail(&#39;bac&#39;)" style="cursor:pointer;">
+          <div class="product-price">€10</div>
+          <div class="product-size">10mL</div>
+        </div>
+        <button onclick="addToCart(&#39;bac&#39;);event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background=&#39;var(--gold-light)&#39;" onmouseout="this.style.background=&#39;var(--gold)&#39;">+</button>
+        <div class="product-arrow" onclick="showProductDetail(&#39;bac&#39;)" style="cursor:pointer;">›</div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div id="products-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -711,11 +1287,52 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-product-detail" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" id="product-back-btn" onclick="showPage('products')">← Back to Products</button>
+      <button class="back-btn" id="product-back-btn" onclick="showPage(&#39;products&#39;)">← Back to Products</button>
       <div id="product-detail-content"></div>
     </div>
     <div class="page-content" id="product-detail-body"></div>
-    <div id="product-detail-footer"></div>
+    <div id="product-detail-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -725,22 +1342,63 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-protocols-page" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Research Protocols</div>
       <h1 class="page-hero-title">Built for <strong>Specific Outcomes.</strong></h1>
       <p class="page-hero-sub">Doctor-consulted stacks, sequenced for maximum effect. All protocols start with bloodwork.</p>
     </div>
     <div class="page-content">
       <div class="protocol-cards" style="max-width:100%;grid-template-columns:repeat(3,1fr);">
-        <div class="protocol-card featured" style="background:var(--white);"><div class="protocol-tag">⬡ Most Popular</div><div class="protocol-name">Rest & Recovery Stack</div><div class="protocol-desc">Full mitochondrial reset for overtrained athletes. Hormonal support, cellular repair, and sleep optimisation in one 11-week protocol. Bloodwork required.</div><div class="protocol-compounds"><span class="compound-tag">SS-31</span><span class="compound-tag">MoTS-C</span><span class="compound-tag">Epithalon</span><span class="compound-tag">Tesamorelin</span><span class="compound-tag">HCG</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire →</span></div>
-        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Healing</div><div class="protocol-name">Injury Repair Protocol</div><div class="protocol-desc">Tissue repair and inflammation reduction. Ideal for musculoskeletal injuries, post-surgery recovery, and chronic joint issues. Fast acting, well tolerated.</div><div class="protocol-compounds"><span class="compound-tag">BPC-157</span><span class="compound-tag">TB-500</span><span class="compound-tag">GHK-Cu</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire →</span></div>
-        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Longevity</div><div class="protocol-name">Anti-Ageing Protocol</div><div class="protocol-desc">Telomere support, immune modulation and cellular rejuvenation. Typically run once or twice annually.</div><div class="protocol-compounds"><span class="compound-tag">Epithalon</span><span class="compound-tag">Thymosin Alpha-1</span><span class="compound-tag">GHK-Cu</span><span class="compound-tag">SS-31</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire →</span></div>
-        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Performance</div><div class="protocol-name">Growth Hormone Stack</div><div class="protocol-desc">GH pulse optimisation for body composition and recovery. CJC-DAC with Ipamorelin for synergistic GH release without cortisol blunting.</div><div class="protocol-compounds"><span class="compound-tag">CJC-DAC</span><span class="compound-tag">Ipamorelin</span><span class="compound-tag">Tesamorelin</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire →</span></div>
-        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Immune</div><div class="protocol-name">Immune Restoration</div><div class="protocol-desc">Targeted immune modulation and viral defence. Thymosin Alpha-1 with BPC-157 for gut-immune axis support.</div><div class="protocol-compounds"><span class="compound-tag">Thymosin Alpha-1</span><span class="compound-tag">BPC-157</span><span class="compound-tag">GHK-Cu</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire →</span></div>
-        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Weight</div><div class="protocol-name">Body Composition Stack</div><div class="protocol-desc">Visceral fat reduction and metabolic optimisation. Retatrutide with Tesamorelin for targeted adipose tissue reduction.</div><div class="protocol-compounds"><span class="compound-tag">Retatrutide</span><span class="compound-tag">Tesamorelin</span><span class="compound-tag">MoTS-C</span></div><span class="protocol-link" onclick="showPage('contact-page')">Enquire →</span></div>
+        <div class="protocol-card featured" style="background:var(--white);"><div class="protocol-tag">⬡ Most Popular</div><div class="protocol-name">Rest &amp; Recovery Stack</div><div class="protocol-desc">Full mitochondrial reset for overtrained athletes. Hormonal support, cellular repair, and sleep optimisation in one 11-week protocol. Bloodwork required.</div><div class="protocol-compounds"><span class="compound-tag">SS-31</span><span class="compound-tag">MoTS-C</span><span class="compound-tag">Epithalon</span><span class="compound-tag">Tesamorelin</span><span class="compound-tag">HCG</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire →</span></div>
+        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Healing</div><div class="protocol-name">Injury Repair Protocol</div><div class="protocol-desc">Tissue repair and inflammation reduction. Ideal for musculoskeletal injuries, post-surgery recovery, and chronic joint issues. Fast acting, well tolerated.</div><div class="protocol-compounds"><span class="compound-tag">BPC-157</span><span class="compound-tag">TB-500</span><span class="compound-tag">GHK-Cu</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire →</span></div>
+        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Longevity</div><div class="protocol-name">Anti-Ageing Protocol</div><div class="protocol-desc">Telomere support, immune modulation and cellular rejuvenation. Typically run once or twice annually.</div><div class="protocol-compounds"><span class="compound-tag">Epithalon</span><span class="compound-tag">Thymosin Alpha-1</span><span class="compound-tag">GHK-Cu</span><span class="compound-tag">SS-31</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire →</span></div>
+        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Performance</div><div class="protocol-name">Growth Hormone Stack</div><div class="protocol-desc">GH pulse optimisation for body composition and recovery. CJC-DAC with Ipamorelin for synergistic GH release without cortisol blunting.</div><div class="protocol-compounds"><span class="compound-tag">CJC-DAC</span><span class="compound-tag">Ipamorelin</span><span class="compound-tag">Tesamorelin</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire →</span></div>
+        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Immune</div><div class="protocol-name">Immune Restoration</div><div class="protocol-desc">Targeted immune modulation and viral defence. Thymosin Alpha-1 with BPC-157 for gut-immune axis support.</div><div class="protocol-compounds"><span class="compound-tag">Thymosin Alpha-1</span><span class="compound-tag">BPC-157</span><span class="compound-tag">GHK-Cu</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire →</span></div>
+        <div class="protocol-card" style="background:var(--white);"><div class="protocol-tag">⬡ Weight</div><div class="protocol-name">Body Composition Stack</div><div class="protocol-desc">Visceral fat reduction and metabolic optimisation. Retatrutide with Tesamorelin for targeted adipose tissue reduction.</div><div class="protocol-compounds"><span class="compound-tag">Retatrutide</span><span class="compound-tag">Tesamorelin</span><span class="compound-tag">MoTS-C</span></div><span class="protocol-link" onclick="showPage(&#39;contact-page&#39;)">Enquire →</span></div>
       </div>
     </div>
-    <div id="protocols-page-footer"></div>
+    <div id="protocols-page-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -750,7 +1408,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-recon-guide" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Educational Resource</div>
       <h1 class="page-hero-title">Peptide <strong>Reconstitution Guide</strong></h1>
       <p class="page-hero-sub">Step-by-step guide to safely reconstituting lyophilised peptide vials. For research purposes only.</p>
@@ -769,7 +1427,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <div class="recon-step-card"><div class="recon-step-num">03</div><div class="recon-step-title">Draw BAC Water</div><div class="recon-step-text">Insert the syringe needle into the BAC water vial and draw up the required amount. Refer to your personalised dosing card for the exact volume — typically 1–2mL depending on the compound.</div></div>
         <div class="recon-step-card"><div class="recon-step-num">04</div><div class="recon-step-title">Add Water to Vial</div><div class="recon-step-text">Insert the needle into the peptide vial and angle it so water runs slowly <em>down the inside glass wall</em> — never directly onto the powder pellet. Inject slowly. Do not force it.</div></div>
         <div class="recon-step-card"><div class="recon-step-num">05</div><div class="recon-step-title">Dissolve Gently</div><div class="recon-step-text">Once water is added, gently swirl the vial between your palms in a circular motion. Do not shake, vortex, or tap aggressively. The powder should dissolve within 30–90 seconds into a clear solution.</div></div>
-        <div class="recon-step-card"><div class="recon-step-num">06</div><div class="recon-step-title">Inspect & Store</div><div class="recon-step-text">The reconstituted solution should be clear and colourless. Discard if cloudy, discoloured, or contains visible particles. Label the vial with the date. Refrigerate immediately. Do not freeze.</div></div>
+        <div class="recon-step-card"><div class="recon-step-num">06</div><div class="recon-step-title">Inspect &amp; Store</div><div class="recon-step-text">The reconstituted solution should be clear and colourless. Discard if cloudy, discoloured, or contains visible particles. Label the vial with the date. Refrigerate immediately. Do not freeze.</div></div>
       </div>
 
       <div class="section-header">
@@ -799,7 +1457,48 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         </tbody>
       </table>
     </div>
-    <div id="recon-footer"></div>
+    <div id="recon-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -809,7 +1508,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-faq" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Support</div>
       <h1 class="page-hero-title">Frequently Asked <strong>Questions</strong></h1>
       <p class="page-hero-sub">Can't find what you're looking for? Reach us on Telegram — messages only, no calls.</p>
@@ -828,7 +1527,48 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Are these products for human use?<span class="faq-icon">+</span></div><div class="faq-answer">No. All products sold by Exir DNA Ultra Labs are strictly for research purposes only and are not intended for human or animal consumption. By purchasing, you confirm that you are an independent researcher and that all use is consistent with applicable research regulations in your jurisdiction. Consult a qualified medical professional before commencing any research protocol.</div></div>
       </div>
     </div>
-    <div id="faq-footer"></div>
+    <div id="faq-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -838,7 +1578,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-contact-page" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Get In Touch</div>
       <h1 class="page-hero-title">Contact <strong>Ultra Labs</strong></h1>
       <p class="page-hero-sub">Messages only — no calls. We typically respond within a few hours.</p>
@@ -847,23 +1587,64 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:800px;">
         <div style="background:var(--white);border-radius:8px;padding:36px;border:1px solid rgba(13,31,53,.07);text-align:center;">
           <div style="font-size:32px;margin-bottom:16px;">✈</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px;">Telegram</div>
+          <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px;">Telegram</div>
           <div style="font-size:11px;color:var(--text-muted);line-height:1.8;margin-bottom:24px;">Preferred channel. Fastest response. Messages only — no calls.</div>
           <a href="https://t.me/Exirdnaultra" class="btn-primary" style="text-decoration:none;">Open Telegram →</a>
         </div>
         <div style="background:var(--white);border-radius:8px;padding:36px;border:1px solid rgba(13,31,53,.07);text-align:center;">
           <div style="font-size:32px;margin-bottom:16px;">✉</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px;">Email</div>
+          <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px;">Email</div>
           <div style="font-size:11px;color:var(--text-muted);line-height:1.8;margin-bottom:24px;">For formal enquiries, protocol requests and certificates of analysis.</div>
-          <a href="mailto:sales@exirdna.com" class="btn-outline">Send Email →</a>
+          <a href="/cdn-cgi/l/email-protection#1d6e7c71786e5d7865746f79737c337e7270" class="btn-outline">Send Email →</a>
         </div>
       </div>
       <div style="margin-top:48px;max-width:800px;background:rgba(184,146,42,.06);border:1px solid var(--gold-dim);border-radius:8px;padding:28px 32px;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:10px;">No Calls Policy</div>
+        <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:10px;">No Calls Policy</div>
         <p style="font-size:12px;color:var(--text-muted);line-height:1.9;font-weight:300;">We operate a messages-only policy. All communication is via Telegram or email. This allows us to maintain accurate records, respond thoughtfully, and provide the best possible protocol guidance. We typically respond within a few hours during business hours. Thank you for your understanding.</p>
       </div>
     </div>
-    <div id="contact-page-footer"></div>
+    <div id="contact-page-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -873,7 +1654,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-affiliate" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Partner Programme</div>
       <h1 class="page-hero-title">Affiliate <strong>Programme</strong></h1>
       <p class="page-hero-sub">Earn commission by referring researchers to Ultra Labs. Coming soon.</p>
@@ -890,7 +1671,48 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <div class="affiliate-benefit"><div class="affiliate-benefit-icon">🤝</div><div class="affiliate-benefit-title">Partner Support</div><div class="affiliate-benefit-text">Dedicated support for affiliates. Marketing materials, product knowledge resources, and a direct line to our team.</div></div>
       </div>
     </div>
-    <div id="affiliate-footer"></div>
+    <div id="affiliate-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -900,7 +1722,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-track-order" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Order Management</div>
       <h1 class="page-hero-title">Track Your <strong>Order</strong></h1>
       <p class="page-hero-sub">Automated order tracking coming soon. In the meantime, contact us directly for updates.</p>
@@ -914,7 +1736,48 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         </div>
       </div>
     </div>
-    <div id="track-footer"></div>
+    <div id="track-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -923,60 +1786,64 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 ══════════════════════════════════════ -->
 <div id="page-terms" class="page">
   <div class="inner-page">
-    <div class="page-hero"><button class="back-btn" onclick="showPage('home')">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Terms & <strong>Conditions</strong></h1></div>
-    <div class="page-content">
-      <div style="max-width:800px;">
-
-        <div style="background:rgba(184,146,42,0.08);border:1px solid rgba(184,146,42,0.3);border-radius:6px;padding:24px 28px;margin-bottom:40px;">
-          <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;"><strong style="color:var(--navy);">IMPORTANT:</strong> Please read these Terms & Conditions carefully before accessing or purchasing from this website. By accessing this site, adding items to your cart, or placing an order, you confirm that you have read, understood, and agree to be bound by these terms in their entirety.</p>
-        </div>
-
-        <div style="font-size:12px;color:var(--text-muted);line-height:2;font-weight:300;">
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">1. Nature of Products</h3>
-          <p style="margin-bottom:16px;">All compounds sold by Exir DNA Ultra Labs are supplied exclusively as <strong>research chemicals for independent laboratory research purposes only</strong>. They are not medicines, dietary supplements, or food products. They have not been approved by the FDA, EMA, or any other regulatory authority for human or animal therapeutic use. They are not intended to diagnose, treat, cure, or prevent any disease or medical condition.</p>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">2. Eligibility — Researcher Declaration</h3>
-          <p style="margin-bottom:16px;">By purchasing from this website you unconditionally declare that:</p>
-          <ul style="margin:0 0 16px 24px;font-size:11px;line-height:2.2;">
-            <li>You are aged 18 years or older</li>
-            <li>You are a qualified independent researcher purchasing these compounds solely for legitimate scientific research</li>
-            <li>You will not use these compounds on yourself, another person, or any animal</li>
-            <li>You understand that these compounds carry inherent research risks and you assume all responsibility for their safe handling and storage</li>
-            <li>You have verified that the purchase, possession, and use of these compounds is legal in your jurisdiction</li>
-          </ul>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">3. No Medical Claims</h3>
-          <p style="margin-bottom:16px;">Nothing on this website constitutes medical advice. Any information provided regarding compounds — including mechanisms of action, research findings, or protocol suggestions — is provided for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment recommendation. Always consult a qualified medical professional before making any health decisions.</p>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">4. Jurisdiction & Legal Compliance</h3>
-          <p style="margin-bottom:16px;">It is the buyer's sole responsibility to ensure that the purchase, importation, possession, and use of any compound ordered is lawful in their country, state, or territory. Exir DNA Ultra Labs accepts no liability for any legal consequences arising from a buyer's failure to comply with applicable laws. We reserve the right to refuse orders to any jurisdiction where we believe legal risk exists.</p>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">5. Limitation of Liability</h3>
-          <p style="margin-bottom:16px;">To the fullest extent permitted by applicable law, Exir DNA Ultra Labs, its directors, employees, and agents shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from the purchase, handling, storage, or use of compounds purchased from this website. This includes but is not limited to personal injury, property damage, or regulatory penalties.</p>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">6. Product Quality & Purity</h3>
-          <p style="margin-bottom:16px;">All compounds are third-party tested for identity, purity, and potency. Certificates of Analysis are available on request. However, purchasers are advised to conduct their own independent verification before use in any research setting. We make no warranty as to the fitness of any compound for any particular research purpose.</p>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">7. Returns & Refunds</h3>
-          <p style="margin-bottom:16px;">Due to the nature of research compounds and cold-chain storage requirements, we cannot accept returns of opened products. Damaged or incorrectly supplied orders will be remedied at our discretion. Please contact us within 48 hours of delivery for any issues.</p>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">8. Governing Law</h3>
-          <p style="margin-bottom:16px;">These Terms & Conditions are governed by and construed in accordance with applicable European Union law. Any disputes shall be subject to the exclusive jurisdiction of the courts of the European Union.</p>
-
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">9. Amendments</h3>
-          <p style="margin-bottom:40px;">We reserve the right to update these Terms & Conditions at any time. Continued use of the website following any changes constitutes acceptance of the revised terms.</p>
-
-          <div style="background:rgba(13,31,53,0.04);border-radius:4px;padding:20px 24px;font-size:10px;color:var(--text-muted);line-height:1.9;font-style:italic;">
-            Last updated: March 2026. These terms are provided for informational purposes. They do not constitute legal advice. We recommend consulting a qualified legal professional for advice specific to your circumstances.
-          </div>
-        </div>
-      </div>
-
+    <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Terms &amp; <strong>Conditions</strong></h1></div>
+    <div class="page-content"><div class="policy-content">
+      <h2>1. Research Purposes Only</h2><p>All products sold by Exir DNA Ultra Labs are intended strictly for research purposes only. By purchasing any product, the buyer confirms they are an independent researcher and that all use is compliant with applicable local laws and regulations. Products are not intended for human or animal consumption.</p>
+      <h2>2. Eligibility</h2><p>You must be 18 years of age or older to purchase from Exir DNA Ultra Labs. By placing an order, you confirm you meet this requirement and that you are purchasing for legitimate research purposes.</p>
+      <h2>3. Order Acceptance</h2><p>All orders are subject to acceptance by Exir DNA Ultra Labs. We reserve the right to refuse or cancel any order at our discretion. Orders are confirmed upon receipt of payment.</p>
+      <h2>4. Payment</h2><p>Payment is currently accepted via cryptocurrency only. Wallet details are provided at order confirmation. Orders will not be dispatched until payment is confirmed on the blockchain. All prices are listed in Euro (EUR).</p>
+      <h2>5. Liability Disclaimer</h2><p>Exir DNA Ultra Labs accepts no liability for any use of its products. The buyer assumes full responsibility for compliance with all applicable laws and regulations. No information on this website constitutes medical advice.</p>
+      <h2>6. Intellectual Property</h2><p>All content on this website including text, design, and branding is the property of Exir DNA Ultra Labs and may not be reproduced without written permission.</p>
+      <h2>7. Changes to Terms</h2><p>We reserve the right to update these terms at any time. Continued use of the website constitutes acceptance of any revised terms.</p>
+    </div></div>
+    <div id="terms-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
     </div>
-    <div id="terms-footer"><div id="page-privacy" class="page">
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
+  </div>
+</div>
+
+<div id="page-privacy" class="page">
   <div class="inner-page">
-    <div class="page-hero"><button class="back-btn" onclick="showPage('home')">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Privacy <strong>Policy</strong></h1></div>
+    <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Privacy <strong>Policy</strong></h1></div>
     <div class="page-content"><div class="policy-content">
       <h2>Data We Collect</h2><p>We collect only the information necessary to process your order and provide customer support. This may include your name, contact details (Telegram handle or email), and order information. We do not collect financial data — cryptocurrency transactions are handled externally.</p>
       <h2>How We Use Your Data</h2><p>Your data is used solely to process and fulfil your order, communicate order updates, and provide protocol support. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
@@ -984,28 +1851,110 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
       <h2>Cookies</h2><p>This website does not currently use tracking cookies or third-party analytics.</p>
       <h2>Contact</h2><p>For any privacy-related enquiries, contact us via Telegram or email. We aim to respond within 48 hours.</p>
     </div></div>
-    <div id="privacy-footer"></div>
+    <div id="privacy-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
 <div id="page-shipping" class="page">
   <div class="inner-page">
-    <div class="page-hero"><button class="back-btn" onclick="showPage('home')">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Shipping <strong>Policy</strong></h1></div>
+    <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Shipping <strong>Policy</strong></h1></div>
     <div class="page-content"><div class="policy-content">
       <h2>Processing Time</h2><p>Orders are processed within 2–3 business days of confirmed payment. You will receive confirmation via Telegram or email once your order has been dispatched.</p>
       <h2>Shipping Zone</h2><p>We primarily ship within the European Union. For enquiries about international shipping, contact us before placing an order. Additional shipping fees and customs regulations may apply.</p>
       <h2>Shipping Method</h2><p>All orders are shipped via tracked courier. Tracking information will be provided upon dispatch. Estimated delivery times vary by destination — typically 3–7 business days within the EU.</p>
       <h2>Temperature Sensitive Products</h2><p>Lyophilised peptide vials are stable at room temperature during transit. Reconstituted vials must not be shipped — please only order unreconstituted vials for delivery.</p>
-      <h2>Customs & Import</h2><p>International researchers are responsible for compliance with local import regulations. Exir DNA Ultra Labs is not responsible for customs delays or seizures. If you are unsure about import regulations in your jurisdiction, seek legal advice before ordering.</p>
+      <h2>Customs &amp; Import</h2><p>International researchers are responsible for compliance with local import regulations. Exir DNA Ultra Labs is not responsible for customs delays or seizures. If you are unsure about import regulations in your jurisdiction, seek legal advice before ordering.</p>
       <h2>Lost or Damaged Shipments</h2><p>In the event of a lost or damaged shipment, contact us within 48 hours of the expected delivery date. We will work with our courier to investigate and arrange a replacement where appropriate.</p>
     </div></div>
-    <div id="shipping-footer"></div>
+    <div id="shipping-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
 <div id="page-returns" class="page">
   <div class="inner-page">
-    <div class="page-hero"><button class="back-btn" onclick="showPage('home')">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Return <strong>Policy</strong></h1></div>
+    <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Return <strong>Policy</strong></h1></div>
     <div class="page-content"><div class="policy-content">
       <h2>General Policy</h2><p>Due to the sensitive and perishable nature of research compounds, we cannot accept returns of opened, reconstituted, or used products under any circumstances.</p>
       <h2>Damaged or Defective Items</h2><p>If your order arrives damaged or a vial appears defective (e.g. broken seal, cloudy solution, incorrect product), contact us within 48 hours of receipt with your order reference and photographic evidence. We will assess the claim and arrange a replacement at our discretion.</p>
@@ -1013,7 +1962,48 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
       <h2>Order Cancellation</h2><p>Orders may be cancelled before dispatch. Once an order has been dispatched, cancellation is no longer possible. Contact us as soon as possible if you need to cancel.</p>
       <h2>Refunds</h2><p>Approved refunds are processed in the same cryptocurrency used for payment, at the exchange rate at the time of the original transaction. Refunds may take 3–5 business days to process.</p>
     </div></div>
-    <div id="returns-footer"></div>
+    <div id="returns-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -1024,14 +2014,14 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-blood-guide" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Optimisation Reference</div>
       <h1 class="page-hero-title">Blood Test <strong>Guide</strong></h1>
       <p class="page-hero-sub">Understanding what your blood work means — minimum acceptable vs optimal performance ranges.</p>
     </div>
     <div class="page-content">
       <div style="background:rgba(184,146,42,0.08);border:1px solid rgba(184,146,42,0.3);border-radius:6px;padding:24px 28px;margin-bottom:48px;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">⚠ Important Disclaimer</div>
+        <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">⚠ Important Disclaimer</div>
         <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;">The ranges below are <strong>general guidelines for educational purposes only</strong>. They do not constitute medical advice. We encourage you to do your own research and consult a qualified healthcare professional before making any decisions based on your blood work. By reading this guide, you accept full responsibility for how you interpret and act on this information. Individual physiology varies significantly — these ranges are a starting point for informed self-research only.</p>
       </div>
 
@@ -1107,13 +2097,54 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
       </div>
 
       <div style="background:rgba(13,31,53,0.04);border-radius:8px;padding:32px 36px;max-width:800px;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:16px;">Using This Guide</div>
+        <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:16px;">Using This Guide</div>
         <p style="font-size:12px;color:var(--text-muted);line-height:1.9;font-weight:300;margin-bottom:12px;">When you contact us with your protocol request, sharing your blood test results allows us to build a personalised compound selection around your actual biomarker status — not a generic template.</p>
         <p style="font-size:12px;color:var(--text-muted);line-height:1.9;font-weight:300;margin-bottom:24px;">We look at the <em>pattern</em> of results rather than single values in isolation. Low IGF-1 combined with elevated cortisol and low ferritin tells a very different story than the same IGF-1 in isolation.</p>
-        <span class="btn-primary" onclick="showPage('contact-page')" style="cursor:pointer;display:inline-block;">Share Your Results → Build a Protocol</span>
+        <span class="btn-primary" onclick="showPage(&#39;contact-page&#39;)" style="cursor:pointer;display:inline-block;">Share Your Results → Build a Protocol</span>
       </div>
     </div>
-    <div id="blood-guide-footer"></div>
+    <div id="blood-guide-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -1123,7 +2154,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-calculator-page" class="page">
   <div class="inner-page">
     <div class="page-hero">
-      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
       <div class="page-hero-eyebrow">Research Tool</div>
       <h1 class="page-hero-title">Peptide <strong>Calculator</strong></h1>
       <p class="page-hero-sub">Calculate exact injection volumes from vial size, reconstitution volume, and target dose.</p>
@@ -1131,22 +2162,22 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
     <div class="page-content">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:960px;">
         <div style="background:var(--white);border-radius:8px;padding:36px;border:1px solid rgba(13,31,53,.08);">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:28px;">Calculate Injection Volume</div>
+          <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:28px;">Calculate Injection Volume</div>
           <div style="margin-bottom:20px;">
             <label style="display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Vial Size (mg)</label>
-            <input type="number" id="calc-vial-mg" placeholder="e.g. 10" step="0.1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:'Montserrat',sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
+            <input type="number" id="calc-vial-mg" placeholder="e.g. 10" step="0.1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:&#39;Montserrat&#39;,sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
           </div>
           <div style="margin-bottom:20px;">
             <label style="display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">BAC Water Added (mL)</label>
-            <input type="number" id="calc-bac-ml" placeholder="e.g. 2" step="0.1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:'Montserrat',sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
+            <input type="number" id="calc-bac-ml" placeholder="e.g. 2" step="0.1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:&#39;Montserrat&#39;,sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
           </div>
           <div style="margin-bottom:28px;">
             <label style="display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Target Dose (mcg)</label>
-            <input type="number" id="calc-dose-mcg" placeholder="e.g. 250" step="1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:'Montserrat',sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
+            <input type="number" id="calc-dose-mcg" placeholder="e.g. 250" step="1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:&#39;Montserrat&#39;,sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
           </div>
           <div id="calc-result" style="display:none;background:var(--navy);border-radius:6px;padding:24px;text-align:center;">
             <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(192,200,212,0.5);margin-bottom:8px;">Inject</div>
-            <div id="calc-volume" style="font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:700;color:var(--gold);line-height:1;"></div>
+            <div id="calc-volume" style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:42px;font-weight:700;color:var(--gold);line-height:1;"></div>
             <div style="font-size:11px;color:rgba(192,200,212,0.6);margin-top:6px;">millilitres (mL)</div>
             <div id="calc-units" style="font-size:10px;color:rgba(184,146,42,0.6);margin-top:10px;letter-spacing:1px;"></div>
           </div>
@@ -1154,12 +2185,12 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         </div>
         <div>
           <div style="background:rgba(184,146,42,0.06);border:1px solid rgba(184,146,42,0.2);border-radius:8px;padding:28px;margin-bottom:24px;">
-            <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px;">How It Works</div>
+            <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px;">How It Works</div>
             <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;margin-bottom:10px;"><strong>Concentration</strong> = Vial mg ÷ BAC water mL<br>e.g. 10mg ÷ 2mL = 5mg/mL = 5,000mcg/mL</p>
             <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;"><strong>Volume to inject</strong> = Dose mcg ÷ Concentration mcg/mL<br>e.g. 250mcg ÷ 5,000 = 0.05mL = 5 units on a 100-unit syringe</p>
           </div>
           <div style="background:var(--white);border-radius:8px;padding:28px;border:1px solid rgba(13,31,53,.08);">
-            <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px;">Standard Concentrations</div>
+            <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px;">Standard Concentrations</div>
             <table style="width:100%;border-collapse:collapse;font-size:10px;">
               <thead><tr style="border-bottom:1px solid rgba(13,31,53,.1);"><th style="text-align:left;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">Compound</th><th style="text-align:center;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">Vial</th><th style="text-align:center;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">+BAC</th><th style="text-align:center;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">Conc.</th></tr></thead>
               <tbody>
@@ -1180,7 +2211,48 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <p style="font-size:10px;color:var(--text-muted);line-height:1.8;font-weight:300;font-style:italic;">⚠ Calculator disclaimer: For research reference only. Always verify calculations against your personalised dosing card. If in doubt, contact us before administering.</p>
       </div>
     </div>
-    <div id="calculator-page-footer"></div>
+    <div id="calculator-page-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -1253,12 +2325,12 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
           <div class="checkout-form-section">
             <div class="checkout-section-title">Payment Method</div>
             <div class="checkout-payment-methods">
-              <div class="payment-option selected" id="pay-crypto" onclick="selectPayment('crypto')">
+              <div class="payment-option selected" id="pay-crypto" onclick="selectPayment(&#39;crypto&#39;)">
                 <div class="payment-option-icon">₿</div>
                 <div class="payment-option-label">Cryptocurrency</div>
                 <div class="payment-option-sub">BTC · ETH · USDT · 300+ coins</div>
               </div>
-              <div class="payment-option" id="pay-bank" onclick="selectPayment('bank')">
+              <div class="payment-option" id="pay-bank" onclick="selectPayment(&#39;bank&#39;)">
                 <div class="payment-option-icon">🏦</div>
                 <div class="payment-option-label">Bank Transfer</div>
                 <div class="payment-option-sub">SEPA · EU only</div>
@@ -1302,7 +2374,48 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         </div>
       </div>
     </div>
-    <div id="checkout-footer"></div>
+    <div id="checkout-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
@@ -1320,15 +2433,56 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
         <p style="font-size:11px;color:var(--text-muted);line-height:1.9;margin-bottom:28px;">Payment details will be sent to your email. If you provided a Telegram username, we'll message you there too. For any questions, contact us directly.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
           <a href="https://t.me/Exirdnaultra" class="btn-primary" style="text-decoration:none;">Message on Telegram →</a>
-          <span class="btn-outline" onclick="showPage('home')" style="cursor:pointer;">Back to Home</span>
+          <span class="btn-outline" onclick="showPage(&#39;home&#39;)" style="cursor:pointer;">Back to Home</span>
         </div>
       </div>
     </div>
-    <div id="order-confirm-footer"></div>
+    <div id="order-confirm-footer">
+<div class="gold-line"></div>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand-col">
+      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
+      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
+        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
+        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
+        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
+        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
+        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
+        <li><a>Telegram Only</a></li>
+        <li><a>No Calls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Policies</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
+        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
+        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
+        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+  </div>
+</footer></div>
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ══════════════════════════════════════
 // COMPOUND DATA
 // ══════════════════════════════════════
@@ -1530,7 +2684,7 @@ const FOOTER_HTML = `
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
+    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
   </div>
 </footer>`;
 
@@ -1612,7 +2766,7 @@ function showProductDetail(id) {
         <div style="margin-top:10px;">
           <span class="btn-primary" onclick="showPage('contact-page')" style="display:block;text-align:center;font-size:9px;padding:10px;">Prefer to Enquire → Contact Us</span>
         </div>
-        <div style="margin-top:16px;font-size:10px;color:var(--text-muted);line-height:1.7;font-style:italic;opacity:.7;">For independent laboratory research use only. Not for human or animal consumption. Not a medicine or dietary supplement. By adding to cart you confirm you are a qualified researcher aged 18+ and accept full legal responsibility for compliance in your jurisdiction.</div>
+        <div style="margin-top:16px;font-size:10px;color:var(--text-muted);line-height:1.7;font-style:italic;opacity:.7;">For research purposes only. By enquiring you confirm you are an independent researcher.</div>
       </div>
       <div class="product-detail-right">
         <div class="detail-section">
@@ -1838,39 +2992,4 @@ function submitOrder() {
   const bodyFull = body + (telegram ? '\nTelegram: ' + telegram : '');
 
   // Open email to sales
-  window.location.href = 'mailto:sales@exirdna.com?subject=New Order ' + encodeURIComponent(ref) + '&body=' + encodeURIComponent(bodyFull);
-
-  // Clear cart and show confirmation
-  cart = [];
-  updateCartUI();
-  showPage('order-confirm');
-}
-
-
-// ══════════════════════════════════════
-// AGE GATE
-// ══════════════════════════════════════
-function passAgeGate() {
-  const age = document.getElementById('gate-age').checked;
-  const researcher = document.getElementById('gate-researcher').checked;
-  const terms = document.getElementById('gate-terms').checked;
-  const errorEl = document.getElementById('gate-error');
-  if(!age || !researcher || !terms) {
-    errorEl.style.display = 'block';
-    return;
-  }
-  sessionStorage.setItem('exir-gate-passed', '1');
-  document.getElementById('age-gate').style.display = 'none';
-}
-
-// Check if already passed this session
-window.addEventListener('load', function() {
-  if(sessionStorage.getItem('exir-gate-passed') === '1') {
-    const gate = document.getElementById('age-gate');
-    if(gate) gate.style.display = 'none';
-  }
-});
-
-</script>
-</body>
-</html>
+  window.location.href = 'mailto:sales@exirdna.com?subject=New Order ' + encode
