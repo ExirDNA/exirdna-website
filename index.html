@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/spiro/Downloads/ultralabs-final-v2_6.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -418,15 +419,13 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 .age-gate-checks{background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:24px;margin-bottom:28px;text-align:left;}
 .age-gate-check{display:flex;align-items:flex-start;gap:14px;cursor:pointer;margin-bottom:16px;}
 .age-gate-check:last-child{margin-bottom:0;}
-.age-gate-check input{margin-top:3px;accent-color:#B8922A;width:16px;height:16px;flex-shrink:0;}
+.age-gate-check input[type=checkbox]{margin-top:3px;accent-color:#B8922A;width:16px;height:16px;flex-shrink:0;cursor:pointer;}
 .age-gate-check span{font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;}
 .age-gate-check strong{color:#F2EFE9;}
-.age-gate-error{display:none;font-size:10px;color:rgba(200,80,80,0.9);margin-bottom:16px;letter-spacing:1px;}
-.age-gate-btn{width:100%;padding:16px;background:#B8922A;color:#0D1F35;border:none;font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-weight:600;margin-bottom:12px;}
+.age-gate-error{display:none;font-size:10px;color:rgba(220,80,80,0.9);margin-bottom:16px;letter-spacing:1px;padding:10px;background:rgba(200,50,50,0.1);border-radius:4px;}
+.age-gate-btn{width:100%;padding:16px;background:#B8922A;color:#0D1F35;border:none;font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-weight:600;margin-bottom:12px;transition:background .2s;}
 .age-gate-btn:hover{background:#C9A84C;}
 .age-gate-small{font-size:9px;color:rgba(192,200,212,0.25);line-height:1.7;}
-
-/* ── DISCLAIMER BAR ── */
 .disclaimer-bar{background:rgba(13,31,53,0.97);border-bottom:1px solid rgba(184,146,42,0.2);padding:7px 64px;text-align:center;position:fixed;top:57px;left:0;right:0;z-index:299;font-size:9px;color:rgba(192,200,212,0.5);letter-spacing:1.2px;text-transform:uppercase;}
 .disclaimer-bar strong{color:rgba(184,146,42,0.7);}
 
@@ -446,19 +445,18 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
       </label>
       <label class="age-gate-check">
         <input type="checkbox" id="gate-researcher">
-        <span>I am an <strong>independent researcher</strong> and understand these compounds are sold strictly for <strong>laboratory research purposes only</strong> — not for human or animal consumption</span>
+        <span>I am an <strong>independent researcher</strong> and understand these compounds are sold strictly for <strong>laboratory research purposes only</strong> &mdash; not for human or animal consumption</span>
       </label>
       <label class="age-gate-check">
         <input type="checkbox" id="gate-terms">
-        <span>I accept the <strong>Terms & Conditions</strong> and take full personal responsibility for compliance with the laws of my jurisdiction</span>
+        <span>I accept the <strong>Terms &amp; Conditions</strong> and take full personal responsibility for compliance with the laws of my jurisdiction</span>
       </label>
     </div>
     <div class="age-gate-error" id="gate-error">Please confirm all three declarations to continue.</div>
-    <button class="age-gate-btn" onclick="passAgeGate()">Enter Research Portal →</button>
+    <button class="age-gate-btn" onclick="passAgeGate()">Enter Research Portal &rarr;</button>
     <p class="age-gate-small">By entering you confirm you have read and agree to our terms of use.</p>
   </div>
 </div>
-
 
 <!-- ══════════════════════════════════════
      NAVIGATION
@@ -489,7 +487,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
     </button></li>
   </ul>
 </nav>
-<div class="disclaimer-bar"><strong>Research Compounds Only</strong> &nbsp;·&nbsp; Not for human or animal consumption &nbsp;·&nbsp; Independent laboratory research use only &nbsp;·&nbsp; 18+ researchers only</div>
+<div class="disclaimer-bar"><strong>Research Compounds Only</strong> &nbsp;&middot;&nbsp; Not for human or animal consumption &nbsp;&middot;&nbsp; Independent laboratory research use only &nbsp;&middot;&nbsp; 18+ researchers only</div>
 
 
 <!-- ══════════════════════════════════════
@@ -930,7 +928,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
     <div class="contact-title">Ready to <strong>Begin?</strong></div>
     <p class="contact-sub">Send us your bloodwork and research goals. We'll build your protocol, prepare your compounds, and have your personalised dosing cards ready before your order ships.</p>
     <div class="contact-methods">
-      <a href="/cdn-cgi/l/email-protection#e59684898096a5809d8c97818b84cb868a88" class="contact-btn">✉ &nbsp;Email Us</a>
+      <a href="/cdn-cgi/l/email-protection#cab9aba6afb98aafb2a3b8aea4abe4a9a5a7" class="contact-btn">✉ &nbsp;Email Us</a>
       <a href="https://t.me/Exirdnaultra" class="contact-btn">✈ &nbsp;Telegram</a>
       <a href="https://wa.me/" class="contact-btn">📱 &nbsp;WhatsApp</a>
     </div>
@@ -1595,7 +1593,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
           <div style="font-size:32px;margin-bottom:16px;">✉</div>
           <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px;">Email</div>
           <div style="font-size:11px;color:var(--text-muted);line-height:1.8;margin-bottom:24px;">For formal enquiries, protocol requests and certificates of analysis.</div>
-          <a href="/cdn-cgi/l/email-protection#1d6e7c71786e5d7865746f79737c337e7270" class="btn-outline">Send Email →</a>
+          <a href="/cdn-cgi/l/email-protection#5625373a332516332e3f243238377835393b" class="btn-outline">Send Email →</a>
         </div>
       </div>
       <div style="margin-top:48px;max-width:800px;background:rgba(184,146,42,.06);border:1px solid var(--gold-dim);border-radius:8px;padding:28px 32px;">
@@ -2992,4 +2990,38 @@ function submitOrder() {
   const bodyFull = body + (telegram ? '\nTelegram: ' + telegram : '');
 
   // Open email to sales
-  window.location.href = 'mailto:sales@exirdna.com?subject=New Order ' + encode
+  window.location.href = 'mailto:sales@exirdna.com?subject=New Order ' + encodeURIComponent(ref) + '&body=' + encodeURIComponent(bodyFull);
+
+  // Clear cart and show confirmation
+  cart = [];
+  updateCartUI();
+  showPage('order-confirm');
+}
+
+</script>
+
+<script>
+function passAgeGate() {
+  var age = document.getElementById('gate-age').checked;
+  var researcher = document.getElementById('gate-researcher').checked;
+  var terms = document.getElementById('gate-terms').checked;
+  var errorEl = document.getElementById('gate-error');
+  if (!age || !researcher || !terms) {
+    errorEl.style.display = 'block';
+    return;
+  }
+  errorEl.style.display = 'none';
+  document.getElementById('age-gate').style.display = 'none';
+  try { sessionStorage.setItem('exir-gate', '1'); } catch(e) {}
+}
+(function() {
+  try {
+    if (sessionStorage.getItem('exir-gate') === '1') {
+      var g = document.getElementById('age-gate');
+      if (g) g.style.display = 'none';
+    }
+  } catch(e) {}
+})();
+</script>
+
+</body></html>
