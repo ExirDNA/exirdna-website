@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0058)file:///C:/Users/spiro/Downloads/ultralabs-final-v2_6.html -->
+<!-- saved from url=(0060)file:///C:/Users/spiro/Downloads/Webpage,%20HTML%20Only.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exir DNA Ultra Labs — Precision Research Peptides</title>
-<link href="./webpage,HTML Only_files/css2" rel="stylesheet">
+<link href="./Webpage, HTML Only_files/css2" rel="stylesheet">
 <style>
 :root {
   --cream: #F2EFE9;
@@ -170,7 +170,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
    INNER PAGES COMMON
    ============================================ */
 .inner-page{padding-top:80px;}
-.page-hero{background:var(--navy);padding:80px 64px 60px;position:relative;overflow:hidden;}
+.page-hero{background:var(--navy);padding:100px 64px 60px;position:relative;overflow:hidden;}
 .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(184,146,42,.08) 0%,transparent 60%);}
 .page-hero-eyebrow{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,168,76,.6);margin-bottom:16px;}
 .page-hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,64px);font-weight:300;color:var(--white);line-height:1.05;position:relative;}
@@ -408,9 +408,44 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 .order-confirm-sub{font-size:12px;color:var(--text-muted);line-height:1.9;margin-bottom:32px;}
 .order-ref{background:var(--navy);color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:22px;padding:16px 32px;border-radius:4px;display:inline-block;margin-bottom:32px;letter-spacing:3px;}
 
+
+/* ── DISCLAIMER BANNER ── */
+.disclaimer-bar{background:rgba(13,31,53,0.96);border-bottom:1px solid rgba(184,146,42,0.2);padding:8px 64px;text-align:center;position:fixed;top:57px;left:0;right:0;z-index:299;font-size:9px;color:rgba(192,200,212,0.5);letter-spacing:1.2px;text-transform:uppercase;}
+.disclaimer-bar strong{color:rgba(184,146,42,0.7);}
+
 </style>
 </head>
 <body>
+
+<!-- ══════════════════════════════════════
+     AGE + RESEARCHER GATE
+══════════════════════════════════════ -->
+<div id="age-gate" style="position:fixed;inset:0;background:var(--navy);z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;">
+  <div style="max-width:520px;width:100%;text-align:center;">
+    <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:4px;text-transform:uppercase;margin-bottom:24px;">Exir DNA Ultra Labs</div>
+    <div style="width:48px;height:1px;background:rgba(184,146,42,0.4);margin:0 auto 32px;"></div>
+    <h2 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:32px;font-weight:300;color:var(--cream);margin-bottom:12px;">Restricted Access</h2>
+    <p style="font-size:11px;color:rgba(192,200,212,0.6);line-height:1.9;margin-bottom:32px;font-weight:300;">This website contains information about research compounds available exclusively to qualified independent researchers. Access is restricted to adults aged 18 and over.</p>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.2);border-radius:6px;padding:24px;margin-bottom:28px;text-align:left;">
+      <label style="display:flex;align-items:flex-start;gap:14px;cursor:pointer;margin-bottom:16px;">
+        <input type="checkbox" id="gate-age" style="margin-top:3px;accent-color:var(--gold);width:16px;height:16px;flex-shrink:0;">
+        <span style="font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;">I confirm I am <strong style="color:var(--cream);">18 years of age or older</strong></span>
+      </label>
+      <label style="display:flex;align-items:flex-start;gap:14px;cursor:pointer;margin-bottom:16px;">
+        <input type="checkbox" id="gate-researcher" style="margin-top:3px;accent-color:var(--gold);width:16px;height:16px;flex-shrink:0;">
+        <span style="font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;">I am an <strong style="color:var(--cream);">independent researcher</strong> and understand these compounds are sold strictly for <strong style="color:var(--cream);">laboratory research purposes only</strong> — not for human or animal consumption</span>
+      </label>
+      <label style="display:flex;align-items:flex-start;gap:14px;cursor:pointer;">
+        <input type="checkbox" id="gate-terms" style="margin-top:3px;accent-color:var(--gold);width:16px;height:16px;flex-shrink:0;">
+        <span style="font-size:11px;color:rgba(192,200,212,0.8);line-height:1.8;">I accept the <strong style="color:var(--cream);">Terms &amp; Conditions</strong> and take full personal responsibility for compliance with the laws of my jurisdiction</span>
+      </label>
+    </div>
+    <div id="gate-error" style="display:none;font-size:10px;color:rgba(200,80,80,0.9);margin-bottom:16px;letter-spacing:1px;">Please confirm all three declarations to continue.</div>
+    <button onclick="passAgeGate()" style="width:100%;padding:16px;background:var(--gold);color:var(--navy);border:none;font-family:&#39;Montserrat&#39;,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-weight:600;margin-bottom:12px;transition:background .2s;">Enter Research Portal →</button>
+    <p style="font-size:9px;color:rgba(192,200,212,0.25);line-height:1.7;">By entering you confirm you have read and agree to our terms of use. This site uses a session cookie to remember your confirmation.</p>
+  </div>
+</div>
+
 <!-- ══════════════════════════════════════
      NAVIGATION
 ══════════════════════════════════════ -->
@@ -440,6 +475,8 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
     </button></li>
   </ul>
 </nav>
+
+<div class="disclaimer-bar"><strong>Research Compounds Only</strong> &nbsp;·&nbsp; Not for human or animal consumption &nbsp;·&nbsp; For independent laboratory research use only &nbsp;·&nbsp; 18+ researchers only</div>
 
 <!-- ══════════════════════════════════════
      CART DRAWER
@@ -926,7 +963,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
 
@@ -1224,7 +1261,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1279,7 +1316,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1345,7 +1382,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1445,7 +1482,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1515,7 +1552,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1591,7 +1628,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1659,7 +1696,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1724,7 +1761,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
 </footer></div>
   </div>
@@ -1736,15 +1773,56 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
 <div id="page-terms" class="page">
   <div class="inner-page">
     <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Terms &amp; <strong>Conditions</strong></h1></div>
-    <div class="page-content"><div class="policy-content">
-      <h2>1. Research Purposes Only</h2><p>All products sold by Exir DNA Ultra Labs are intended strictly for research purposes only. By purchasing any product, the buyer confirms they are an independent researcher and that all use is compliant with applicable local laws and regulations. Products are not intended for human or animal consumption.</p>
-      <h2>2. Eligibility</h2><p>You must be 18 years of age or older to purchase from Exir DNA Ultra Labs. By placing an order, you confirm you meet this requirement and that you are purchasing for legitimate research purposes.</p>
-      <h2>3. Order Acceptance</h2><p>All orders are subject to acceptance by Exir DNA Ultra Labs. We reserve the right to refuse or cancel any order at our discretion. Orders are confirmed upon receipt of payment.</p>
-      <h2>4. Payment</h2><p>Payment is currently accepted via cryptocurrency only. Wallet details are provided at order confirmation. Orders will not be dispatched until payment is confirmed on the blockchain. All prices are listed in Euro (EUR).</p>
-      <h2>5. Liability Disclaimer</h2><p>Exir DNA Ultra Labs accepts no liability for any use of its products. The buyer assumes full responsibility for compliance with all applicable laws and regulations. No information on this website constitutes medical advice.</p>
-      <h2>6. Intellectual Property</h2><p>All content on this website including text, design, and branding is the property of Exir DNA Ultra Labs and may not be reproduced without written permission.</p>
-      <h2>7. Changes to Terms</h2><p>We reserve the right to update these terms at any time. Continued use of the website constitutes acceptance of any revised terms.</p>
-    </div></div>
+    <div class="page-content">
+      <div style="max-width:800px;">
+
+        <div style="background:rgba(184,146,42,0.08);border:1px solid rgba(184,146,42,0.3);border-radius:6px;padding:24px 28px;margin-bottom:40px;">
+          <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;"><strong style="color:var(--navy);">IMPORTANT:</strong> Please read these Terms &amp; Conditions carefully before accessing or purchasing from this website. By accessing this site, adding items to your cart, or placing an order, you confirm that you have read, understood, and agree to be bound by these terms in their entirety.</p>
+        </div>
+
+        <div style="font-size:12px;color:var(--text-muted);line-height:2;font-weight:300;">
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">1. Nature of Products</h3>
+          <p style="margin-bottom:16px;">All compounds sold by Exir DNA Ultra Labs are supplied exclusively as <strong>research chemicals for independent laboratory research purposes only</strong>. They are not medicines, dietary supplements, or food products. They have not been approved by the FDA, EMA, or any other regulatory authority for human or animal therapeutic use. They are not intended to diagnose, treat, cure, or prevent any disease or medical condition.</p>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">2. Eligibility — Researcher Declaration</h3>
+          <p style="margin-bottom:16px;">By purchasing from this website you unconditionally declare that:</p>
+          <ul style="margin:0 0 16px 24px;font-size:11px;line-height:2.2;">
+            <li>You are aged 18 years or older</li>
+            <li>You are a qualified independent researcher purchasing these compounds solely for legitimate scientific research</li>
+            <li>You will not use these compounds on yourself, another person, or any animal</li>
+            <li>You understand that these compounds carry inherent research risks and you assume all responsibility for their safe handling and storage</li>
+            <li>You have verified that the purchase, possession, and use of these compounds is legal in your jurisdiction</li>
+          </ul>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">3. No Medical Claims</h3>
+          <p style="margin-bottom:16px;">Nothing on this website constitutes medical advice. Any information provided regarding compounds — including mechanisms of action, research findings, or protocol suggestions — is provided for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment recommendation. Always consult a qualified medical professional before making any health decisions.</p>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">4. Jurisdiction &amp; Legal Compliance</h3>
+          <p style="margin-bottom:16px;">It is the buyer's sole responsibility to ensure that the purchase, importation, possession, and use of any compound ordered is lawful in their country, state, or territory. Exir DNA Ultra Labs accepts no liability for any legal consequences arising from a buyer's failure to comply with applicable laws. We reserve the right to refuse orders to any jurisdiction where we believe legal risk exists.</p>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">5. Limitation of Liability</h3>
+          <p style="margin-bottom:16px;">To the fullest extent permitted by applicable law, Exir DNA Ultra Labs, its directors, employees, and agents shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from the purchase, handling, storage, or use of compounds purchased from this website. This includes but is not limited to personal injury, property damage, or regulatory penalties.</p>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">6. Product Quality &amp; Purity</h3>
+          <p style="margin-bottom:16px;">All compounds are third-party tested for identity, purity, and potency. Certificates of Analysis are available on request. However, purchasers are advised to conduct their own independent verification before use in any research setting. We make no warranty as to the fitness of any compound for any particular research purpose.</p>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">7. Returns &amp; Refunds</h3>
+          <p style="margin-bottom:16px;">Due to the nature of research compounds and cold-chain storage requirements, we cannot accept returns of opened products. Damaged or incorrectly supplied orders will be remedied at our discretion. Please contact us within 48 hours of delivery for any issues.</p>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">8. Governing Law</h3>
+          <p style="margin-bottom:16px;">These Terms &amp; Conditions are governed by and construed in accordance with applicable European Union law. Any disputes shall be subject to the exclusive jurisdiction of the courts of the European Union.</p>
+
+          <h3 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;color:var(--navy);margin:32px 0 12px;font-weight:700;">9. Amendments</h3>
+          <p style="margin-bottom:40px;">We reserve the right to update these Terms &amp; Conditions at any time. Continued use of the website following any changes constitutes acceptance of the revised terms.</p>
+
+          <div style="background:rgba(13,31,53,0.04);border-radius:4px;padding:20px 24px;font-size:10px;color:var(--text-muted);line-height:1.9;font-style:italic;">
+            Last updated: March 2026. These terms are provided for informational purposes. They do not constitute legal advice. We recommend consulting a qualified legal professional for advice specific to your circumstances.
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div id="terms-footer">
 <div class="gold-line"></div>
 <footer>
@@ -1784,1171 +1862,6 @@ footer{background:var(--navy);border-top:1px solid rgba(201,168,76,.12);}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
+    <div class="footer-disclaimer">All compounds are sold strictly for independent laboratory research purposes only. Not for human or animal consumption. Not a medicine, supplement, or therapeutic product. Not evaluated or approved by the FDA, EMA, or any regulatory authority. You must be 18+ and a qualified independent researcher to purchase. It is the buyer's sole responsibility to verify legal compliance in their jurisdiction. Exir DNA Ultra Labs accepts no liability for misuse.</div>
   </div>
-</footer></div>
-  </div>
-</div>
-
-<div id="page-privacy" class="page">
-  <div class="inner-page">
-    <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Privacy <strong>Policy</strong></h1></div>
-    <div class="page-content"><div class="policy-content">
-      <h2>Data We Collect</h2><p>We collect only the information necessary to process your order and provide customer support. This may include your name, contact details (Telegram handle or email), and order information. We do not collect financial data — cryptocurrency transactions are handled externally.</p>
-      <h2>How We Use Your Data</h2><p>Your data is used solely to process and fulfil your order, communicate order updates, and provide protocol support. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
-      <h2>Data Storage</h2><p>Order information is stored securely and retained only as long as necessary to fulfil our obligations to you. You may request deletion of your data at any time by contacting us via Telegram or email.</p>
-      <h2>Cookies</h2><p>This website does not currently use tracking cookies or third-party analytics.</p>
-      <h2>Contact</h2><p>For any privacy-related enquiries, contact us via Telegram or email. We aim to respond within 48 hours.</p>
-    </div></div>
-    <div id="privacy-footer">
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
-        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
-        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
-        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
-        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
-        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
-        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
-        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
-        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer></div>
-  </div>
-</div>
-
-<div id="page-shipping" class="page">
-  <div class="inner-page">
-    <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Shipping <strong>Policy</strong></h1></div>
-    <div class="page-content"><div class="policy-content">
-      <h2>Processing Time</h2><p>Orders are processed within 2–3 business days of confirmed payment. You will receive confirmation via Telegram or email once your order has been dispatched.</p>
-      <h2>Shipping Zone</h2><p>We primarily ship within the European Union. For enquiries about international shipping, contact us before placing an order. Additional shipping fees and customs regulations may apply.</p>
-      <h2>Shipping Method</h2><p>All orders are shipped via tracked courier. Tracking information will be provided upon dispatch. Estimated delivery times vary by destination — typically 3–7 business days within the EU.</p>
-      <h2>Temperature Sensitive Products</h2><p>Lyophilised peptide vials are stable at room temperature during transit. Reconstituted vials must not be shipped — please only order unreconstituted vials for delivery.</p>
-      <h2>Customs &amp; Import</h2><p>International researchers are responsible for compliance with local import regulations. Exir DNA Ultra Labs is not responsible for customs delays or seizures. If you are unsure about import regulations in your jurisdiction, seek legal advice before ordering.</p>
-      <h2>Lost or Damaged Shipments</h2><p>In the event of a lost or damaged shipment, contact us within 48 hours of the expected delivery date. We will work with our courier to investigate and arrange a replacement where appropriate.</p>
-    </div></div>
-    <div id="shipping-footer">
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
-        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
-        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
-        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
-        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
-        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
-        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
-        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
-        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer></div>
-  </div>
-</div>
-
-<div id="page-returns" class="page">
-  <div class="inner-page">
-    <div class="page-hero"><button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button><div class="page-hero-eyebrow">Legal</div><h1 class="page-hero-title">Return <strong>Policy</strong></h1></div>
-    <div class="page-content"><div class="policy-content">
-      <h2>General Policy</h2><p>Due to the sensitive and perishable nature of research compounds, we cannot accept returns of opened, reconstituted, or used products under any circumstances.</p>
-      <h2>Damaged or Defective Items</h2><p>If your order arrives damaged or a vial appears defective (e.g. broken seal, cloudy solution, incorrect product), contact us within 48 hours of receipt with your order reference and photographic evidence. We will assess the claim and arrange a replacement at our discretion.</p>
-      <h2>Wrong Item Received</h2><p>If you receive an incorrect item, contact us immediately via Telegram or email. We will arrange for the correct product to be dispatched and provide return instructions for the incorrect item if required.</p>
-      <h2>Order Cancellation</h2><p>Orders may be cancelled before dispatch. Once an order has been dispatched, cancellation is no longer possible. Contact us as soon as possible if you need to cancel.</p>
-      <h2>Refunds</h2><p>Approved refunds are processed in the same cryptocurrency used for payment, at the exchange rate at the time of the original transaction. Refunds may take 3–5 business days to process.</p>
-    </div></div>
-    <div id="returns-footer">
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
-        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
-        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
-        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
-        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
-        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
-        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
-        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
-        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer></div>
-  </div>
-</div>
-
-
-<!-- ══════════════════════════════════════
-     PAGE: BLOOD TEST GUIDE
-══════════════════════════════════════ -->
-<div id="page-blood-guide" class="page">
-  <div class="inner-page">
-    <div class="page-hero">
-      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
-      <div class="page-hero-eyebrow">Optimisation Reference</div>
-      <h1 class="page-hero-title">Blood Test <strong>Guide</strong></h1>
-      <p class="page-hero-sub">Understanding what your blood work means — minimum acceptable vs optimal performance ranges.</p>
-    </div>
-    <div class="page-content">
-      <div style="background:rgba(184,146,42,0.08);border:1px solid rgba(184,146,42,0.3);border-radius:6px;padding:24px 28px;margin-bottom:48px;">
-        <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">⚠ Important Disclaimer</div>
-        <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;">The ranges below are <strong>general guidelines for educational purposes only</strong>. They do not constitute medical advice. We encourage you to do your own research and consult a qualified healthcare professional before making any decisions based on your blood work. By reading this guide, you accept full responsibility for how you interpret and act on this information. Individual physiology varies significantly — these ranges are a starting point for informed self-research only.</p>
-      </div>
-
-      <div class="section-header">
-        <div class="section-eyebrow">Male Reference</div>
-        <h2 class="section-title">Male <strong>Biomarkers</strong></h2>
-      </div>
-      <div style="overflow-x:auto;margin-bottom:56px;">
-        <table class="recon-table">
-          <thead><tr><th>Biomarker</th><th>Units</th><th>Minimum (Lab Range)</th><th>Optimal (Performance)</th><th>Notes</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Total Testosterone</strong></td><td>nmol/L</td><td>8.0 – 29.0</td><td>20.0 – 30.0+</td><td>Upper third of range associated with best body composition and energy</td></tr>
-            <tr><td><strong>Free Testosterone</strong></td><td>pmol/L</td><td>170 – 670</td><td>400 – 700+</td><td>Bioavailable portion; more clinically relevant than total</td></tr>
-            <tr><td><strong>SHBG</strong></td><td>nmol/L</td><td>18 – 54</td><td>20 – 40</td><td>High SHBG reduces free testosterone availability</td></tr>
-            <tr><td><strong>LH</strong></td><td>IU/L</td><td>1.5 – 9.3</td><td>4.0 – 8.0</td><td>Signals endogenous testosterone production; low may indicate suppression</td></tr>
-            <tr><td><strong>FSH</strong></td><td>IU/L</td><td>1.5 – 12.4</td><td>3.0 – 8.0</td><td>Important for spermatogenesis assessment</td></tr>
-            <tr><td><strong>Oestradiol (E2)</strong></td><td>pmol/L</td><td>&lt;180</td><td>80 – 150</td><td>Balance with testosterone essential; too low impairs joints and libido</td></tr>
-            <tr><td><strong>IGF-1</strong></td><td>nmol/L</td><td>11 – 35</td><td>25 – 35</td><td>GH axis marker; relevant for recovery and body composition protocols</td></tr>
-            <tr><td><strong>Cortisol (AM)</strong></td><td>nmol/L</td><td>170 – 540</td><td>300 – 500</td><td>Morning sample only; low may indicate adrenal insufficiency</td></tr>
-            <tr><td><strong>DHEA-S</strong></td><td>μmol/L</td><td>3.0 – 10.0</td><td>6.0 – 10.0</td><td>Declines with age; precursor to androgens and oestrogens</td></tr>
-            <tr><td><strong>TSH</strong></td><td>mIU/L</td><td>0.4 – 4.0</td><td>0.5 – 2.0</td><td>Optimal thyroid function associated with lower end of range</td></tr>
-            <tr><td><strong>Free T3</strong></td><td>pmol/L</td><td>3.5 – 6.5</td><td>5.0 – 6.5</td><td>Active thyroid hormone; upper range associated with better metabolism</td></tr>
-            <tr><td><strong>Free T4</strong></td><td>pmol/L</td><td>9 – 19</td><td>14 – 19</td><td>Mid-to-upper range preferred</td></tr>
-            <tr><td><strong>Haemoglobin</strong></td><td>g/dL</td><td>13.5 – 17.5</td><td>15.0 – 17.0</td><td>Oxygen carrying capacity; relevant for endurance performance</td></tr>
-            <tr><td><strong>Haematocrit</strong></td><td>%</td><td>40 – 52</td><td>43 – 50</td><td>Monitor if on GH or other protocols that may elevate RBC</td></tr>
-            <tr><td><strong>Ferritin</strong></td><td>μg/L</td><td>30 – 300</td><td>100 – 200</td><td>Iron storage; low impairs recovery and cognitive function</td></tr>
-            <tr><td><strong>Vitamin D (25-OH)</strong></td><td>nmol/L</td><td>50 – 125</td><td>100 – 150</td><td>Deficiency common; impacts testosterone, immune function, mood</td></tr>
-            <tr><td><strong>HbA1c</strong></td><td>%</td><td>&lt;5.7</td><td>&lt;5.2</td><td>3-month glucose average; insulin sensitivity marker</td></tr>
-            <tr><td><strong>Fasting Glucose</strong></td><td>mmol/L</td><td>3.9 – 5.6</td><td>4.2 – 5.0</td><td>Lower fasting glucose correlates with better insulin sensitivity</td></tr>
-            <tr><td><strong>Fasting Insulin</strong></td><td>pmol/L</td><td>&lt;60</td><td>&lt;30</td><td>Low fasting insulin signals excellent metabolic health</td></tr>
-            <tr><td><strong>CRP (hs)</strong></td><td>mg/L</td><td>&lt;3.0</td><td>&lt;1.0</td><td>Inflammation marker; elevated chronic CRP linked to all-cause mortality</td></tr>
-            <tr><td><strong>ALT</strong></td><td>IU/L</td><td>&lt;56</td><td>&lt;30</td><td>Liver enzyme; elevations may indicate hepatic stress</td></tr>
-            <tr><td><strong>eGFR</strong></td><td>mL/min</td><td>&gt;60</td><td>&gt;90</td><td>Kidney filtration; important baseline before protocols</td></tr>
-            <tr><td><strong>Total Cholesterol</strong></td><td>mmol/L</td><td>&lt;5.2</td><td>4.0 – 5.5</td><td>Too low impairs hormonal health; cholesterol is a steroid precursor</td></tr>
-            <tr><td><strong>LDL</strong></td><td>mmol/L</td><td>&lt;3.4</td><td>&lt;2.5</td><td>Pattern A LDL less concerning than Pattern B</td></tr>
-            <tr><td><strong>HDL</strong></td><td>mmol/L</td><td>&gt;1.0</td><td>&gt;1.5</td><td>Higher HDL generally cardioprotective</td></tr>
-            <tr><td><strong>Triglycerides</strong></td><td>mmol/L</td><td>&lt;1.7</td><td>&lt;1.0</td><td>Strong metabolic health marker; elevated often indicates insulin resistance</td></tr>
-            <tr><td><strong>PSA</strong></td><td>ng/mL</td><td>&lt;4.0</td><td>&lt;2.0 (&lt;50yrs)</td><td>Prostate marker; baseline important before hormonal protocols</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="section-header">
-        <div class="section-eyebrow">Female Reference</div>
-        <h2 class="section-title">Female <strong>Biomarkers</strong></h2>
-      </div>
-      <div style="overflow-x:auto;margin-bottom:56px;">
-        <table class="recon-table">
-          <thead><tr><th>Biomarker</th><th>Units</th><th>Minimum (Lab Range)</th><th>Optimal (Performance)</th><th>Notes</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Total Testosterone</strong></td><td>nmol/L</td><td>0.3 – 2.4</td><td>1.0 – 2.2</td><td>Upper range associated with better energy, libido, and muscle retention</td></tr>
-            <tr><td><strong>Free Testosterone</strong></td><td>pmol/L</td><td>3.0 – 31.0</td><td>15.0 – 30.0</td><td>Bioavailable portion; falls sharply after menopause</td></tr>
-            <tr><td><strong>SHBG</strong></td><td>nmol/L</td><td>18 – 144</td><td>40 – 80</td><td>Often elevated in women on oral contraceptives</td></tr>
-            <tr><td><strong>Oestradiol (E2)</strong></td><td>pmol/L</td><td>Follicular: 46–607</td><td>Mid-cycle: 400–900</td><td>Highly phase-dependent; interpret alongside cycle day</td></tr>
-            <tr><td><strong>Progesterone</strong></td><td>nmol/L</td><td>Luteal: &gt;16</td><td>Luteal: 30–80</td><td>Low progesterone vs oestrogen: common cause of poor sleep and mood</td></tr>
-            <tr><td><strong>LH</strong></td><td>IU/L</td><td>Phase-dependent</td><td>Mid-cycle surge: 16–60</td><td>Confirms ovulation; elevated post-menopause indicates ovarian insufficiency</td></tr>
-            <tr><td><strong>FSH</strong></td><td>IU/L</td><td>Follicular: 3.5–12.5</td><td>Follicular: 4–8</td><td>Rising FSH indicates diminishing ovarian reserve</td></tr>
-            <tr><td><strong>AMH</strong></td><td>pmol/L</td><td>&gt;5.4</td><td>15 – 35</td><td>Ovarian reserve marker; relevant for fertility assessment</td></tr>
-            <tr><td><strong>IGF-1</strong></td><td>nmol/L</td><td>11 – 35</td><td>22 – 35</td><td>GH axis proxy; relevant for anti-ageing and recovery</td></tr>
-            <tr><td><strong>Cortisol (AM)</strong></td><td>nmol/L</td><td>170 – 540</td><td>300 – 500</td><td>Chronically elevated cortisol suppresses oestrogen and progesterone</td></tr>
-            <tr><td><strong>DHEA-S</strong></td><td>μmol/L</td><td>0.8 – 5.7</td><td>3.0 – 5.5</td><td>Declines with age; supports libido and energy</td></tr>
-            <tr><td><strong>TSH</strong></td><td>mIU/L</td><td>0.4 – 4.0</td><td>0.5 – 2.0</td><td>Women more susceptible to subclinical hypothyroidism</td></tr>
-            <tr><td><strong>Free T3</strong></td><td>pmol/L</td><td>3.5 – 6.5</td><td>5.0 – 6.5</td><td>Low T3: common cause of fatigue, weight gain, hair loss in women</td></tr>
-            <tr><td><strong>Ferritin</strong></td><td>μg/L</td><td>15 – 200</td><td>80 – 150</td><td>Women often iron-depleted; major cause of fatigue and hair loss</td></tr>
-            <tr><td><strong>Vitamin D (25-OH)</strong></td><td>nmol/L</td><td>50 – 125</td><td>100 – 150</td><td>Critical for bone density, mood, immune function and hormonal balance</td></tr>
-            <tr><td><strong>HbA1c</strong></td><td>%</td><td>&lt;5.7</td><td>&lt;5.2</td><td>Insulin resistance common in PCOS; important baseline</td></tr>
-            <tr><td><strong>Fasting Insulin</strong></td><td>pmol/L</td><td>&lt;60</td><td>&lt;30</td><td>Key metabolic health marker</td></tr>
-            <tr><td><strong>CRP (hs)</strong></td><td>mg/L</td><td>&lt;3.0</td><td>&lt;1.0</td><td>Systemic inflammation can suppress progesterone production</td></tr>
-            <tr><td><strong>ALT</strong></td><td>IU/L</td><td>&lt;45</td><td>&lt;25</td><td>Liver health baseline; important before any protocol</td></tr>
-            <tr><td><strong>eGFR</strong></td><td>mL/min</td><td>&gt;60</td><td>&gt;90</td><td>Standard pre-protocol baseline</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div style="background:rgba(13,31,53,0.04);border-radius:8px;padding:32px 36px;max-width:800px;">
-        <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:16px;">Using This Guide</div>
-        <p style="font-size:12px;color:var(--text-muted);line-height:1.9;font-weight:300;margin-bottom:12px;">When you contact us with your protocol request, sharing your blood test results allows us to build a personalised compound selection around your actual biomarker status — not a generic template.</p>
-        <p style="font-size:12px;color:var(--text-muted);line-height:1.9;font-weight:300;margin-bottom:24px;">We look at the <em>pattern</em> of results rather than single values in isolation. Low IGF-1 combined with elevated cortisol and low ferritin tells a very different story than the same IGF-1 in isolation.</p>
-        <span class="btn-primary" onclick="showPage(&#39;contact-page&#39;)" style="cursor:pointer;display:inline-block;">Share Your Results → Build a Protocol</span>
-      </div>
-    </div>
-    <div id="blood-guide-footer">
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
-        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
-        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
-        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
-        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
-        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
-        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
-        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
-        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer></div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
-     PAGE: PEPTIDE CALCULATOR
-══════════════════════════════════════ -->
-<div id="page-calculator-page" class="page">
-  <div class="inner-page">
-    <div class="page-hero">
-      <button class="back-btn" onclick="showPage(&#39;home&#39;)">← Back to Home</button>
-      <div class="page-hero-eyebrow">Research Tool</div>
-      <h1 class="page-hero-title">Peptide <strong>Calculator</strong></h1>
-      <p class="page-hero-sub">Calculate exact injection volumes from vial size, reconstitution volume, and target dose.</p>
-    </div>
-    <div class="page-content">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:960px;">
-        <div style="background:var(--white);border-radius:8px;padding:36px;border:1px solid rgba(13,31,53,.08);">
-          <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:28px;">Calculate Injection Volume</div>
-          <div style="margin-bottom:20px;">
-            <label style="display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Vial Size (mg)</label>
-            <input type="number" id="calc-vial-mg" placeholder="e.g. 10" step="0.1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:&#39;Montserrat&#39;,sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
-          </div>
-          <div style="margin-bottom:20px;">
-            <label style="display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">BAC Water Added (mL)</label>
-            <input type="number" id="calc-bac-ml" placeholder="e.g. 2" step="0.1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:&#39;Montserrat&#39;,sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
-          </div>
-          <div style="margin-bottom:28px;">
-            <label style="display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Target Dose (mcg)</label>
-            <input type="number" id="calc-dose-mcg" placeholder="e.g. 250" step="1" min="0" oninput="calcDose()" style="width:100%;box-sizing:border-box;padding:12px 16px;border:1px solid rgba(13,31,53,.15);border-radius:4px;font-size:13px;font-family:&#39;Montserrat&#39;,sans-serif;color:var(--navy);background:rgba(13,31,53,.02);outline:none;">
-          </div>
-          <div id="calc-result" style="display:none;background:var(--navy);border-radius:6px;padding:24px;text-align:center;">
-            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(192,200,212,0.5);margin-bottom:8px;">Inject</div>
-            <div id="calc-volume" style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:42px;font-weight:700;color:var(--gold);line-height:1;"></div>
-            <div style="font-size:11px;color:rgba(192,200,212,0.6);margin-top:6px;">millilitres (mL)</div>
-            <div id="calc-units" style="font-size:10px;color:rgba(184,146,42,0.6);margin-top:10px;letter-spacing:1px;"></div>
-          </div>
-          <div id="calc-error" style="display:none;background:rgba(200,50,50,0.08);border:1px solid rgba(200,50,50,0.2);border-radius:6px;padding:16px;font-size:11px;color:rgba(200,50,50,0.8);margin-top:16px;"></div>
-        </div>
-        <div>
-          <div style="background:rgba(184,146,42,0.06);border:1px solid rgba(184,146,42,0.2);border-radius:8px;padding:28px;margin-bottom:24px;">
-            <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px;">How It Works</div>
-            <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;margin-bottom:10px;"><strong>Concentration</strong> = Vial mg ÷ BAC water mL<br>e.g. 10mg ÷ 2mL = 5mg/mL = 5,000mcg/mL</p>
-            <p style="font-size:11px;color:var(--text-muted);line-height:1.9;font-weight:300;"><strong>Volume to inject</strong> = Dose mcg ÷ Concentration mcg/mL<br>e.g. 250mcg ÷ 5,000 = 0.05mL = 5 units on a 100-unit syringe</p>
-          </div>
-          <div style="background:var(--white);border-radius:8px;padding:28px;border:1px solid rgba(13,31,53,.08);">
-            <div style="font-family:&#39;Cormorant Garamond&#39;,serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px;">Standard Concentrations</div>
-            <table style="width:100%;border-collapse:collapse;font-size:10px;">
-              <thead><tr style="border-bottom:1px solid rgba(13,31,53,.1);"><th style="text-align:left;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">Compound</th><th style="text-align:center;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">Vial</th><th style="text-align:center;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">+BAC</th><th style="text-align:center;padding:8px 4px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:600;">Conc.</th></tr></thead>
-              <tbody>
-                <tr style="border-bottom:1px solid rgba(13,31,53,.05);"><td style="padding:8px 4px;color:var(--navy);">BPC-157</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">10mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">5mg/mL</td></tr>
-                <tr style="border-bottom:1px solid rgba(13,31,53,.05);"><td style="padding:8px 4px;color:var(--navy);">TB-500 Frag</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">10mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">5mg/mL</td></tr>
-                <tr style="border-bottom:1px solid rgba(13,31,53,.05);"><td style="padding:8px 4px;color:var(--navy);">Epithalon</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">10mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">5mg/mL</td></tr>
-                <tr style="border-bottom:1px solid rgba(13,31,53,.05);"><td style="padding:8px 4px;color:var(--navy);">MoTS-C</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">10mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">5mg/mL</td></tr>
-                <tr style="border-bottom:1px solid rgba(13,31,53,.05);"><td style="padding:8px 4px;color:var(--navy);">SS-31</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">50mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">25mg/mL</td></tr>
-                <tr style="border-bottom:1px solid rgba(13,31,53,.05);"><td style="padding:8px 4px;color:var(--navy);">GHK-Cu 50mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">50mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">25mg/mL</td></tr>
-                <tr style="border-bottom:1px solid rgba(13,31,53,.05);"><td style="padding:8px 4px;color:var(--navy);">Tesamorelin</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">20mg</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">10mg/mL</td></tr>
-                <tr><td style="padding:8px 4px;color:var(--navy);">HCG</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2000iu</td><td style="text-align:center;padding:8px 4px;color:var(--text-muted);">2mL</td><td style="text-align:center;padding:8px 4px;color:var(--navy);font-weight:600;">1000iu/mL</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div style="margin-top:32px;max-width:960px;background:rgba(184,146,42,0.05);border:1px solid rgba(184,146,42,0.15);border-radius:6px;padding:20px 24px;">
-        <p style="font-size:10px;color:var(--text-muted);line-height:1.8;font-weight:300;font-style:italic;">⚠ Calculator disclaimer: For research reference only. Always verify calculations against your personalised dosing card. If in doubt, contact us before administering.</p>
-      </div>
-    </div>
-    <div id="calculator-page-footer">
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
-        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
-        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
-        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
-        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
-        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
-        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
-        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
-        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer></div>
-  </div>
-</div>
-
-
-<!-- ══════════════════════════════════════
-     PAGE: CHECKOUT
-══════════════════════════════════════ -->
-<div id="page-checkout" class="page">
-  <div class="inner-page">
-    <div class="page-hero">
-      <button class="back-btn" onclick="openCart()">← Back to Cart</button>
-      <div class="page-hero-eyebrow">Secure Checkout</div>
-      <h1 class="page-hero-title">Complete Your <strong>Order</strong></h1>
-      <p class="page-hero-sub">All orders are dispatched within 2–3 business days. EU shipping only.</p>
-    </div>
-    <div class="page-content">
-      <div class="checkout-grid">
-        <div>
-          <div class="checkout-form-section">
-            <div class="checkout-section-title">Shipping Details</div>
-            <div class="checkout-row">
-              <div class="checkout-field">
-                <label class="checkout-label">First Name</label>
-                <input class="checkout-input" id="co-fname" type="text" placeholder="First name">
-              </div>
-              <div class="checkout-field">
-                <label class="checkout-label">Last Name</label>
-                <input class="checkout-input" id="co-lname" type="text" placeholder="Last name">
-              </div>
-            </div>
-            <div class="checkout-field">
-              <label class="checkout-label">Email Address</label>
-              <input class="checkout-input" id="co-email" type="email" placeholder="your@email.com">
-            </div>
-            <div class="checkout-field">
-              <label class="checkout-label">Telegram Username (optional — for order updates)</label>
-              <input class="checkout-input" id="co-telegram" type="text" placeholder="@username">
-            </div>
-            <div class="checkout-field">
-              <label class="checkout-label">Street Address</label>
-              <input class="checkout-input" id="co-address" type="text" placeholder="Street address">
-            </div>
-            <div class="checkout-row">
-              <div class="checkout-field">
-                <label class="checkout-label">City</label>
-                <input class="checkout-input" id="co-city" type="text" placeholder="City">
-              </div>
-              <div class="checkout-field">
-                <label class="checkout-label">Postcode</label>
-                <input class="checkout-input" id="co-postcode" type="text" placeholder="Postcode">
-              </div>
-            </div>
-            <div class="checkout-field">
-              <label class="checkout-label">Country</label>
-              <select class="checkout-input" id="co-country">
-                <option value="">Select country</option>
-                <option>Austria</option><option>Belgium</option><option>Croatia</option>
-                <option>Czech Republic</option><option>Denmark</option><option>Estonia</option>
-                <option>Finland</option><option>France</option><option>Germany</option>
-                <option>Greece</option><option>Hungary</option><option>Ireland</option>
-                <option>Italy</option><option>Latvia</option><option>Lithuania</option>
-                <option>Luxembourg</option><option>Malta</option><option>Netherlands</option>
-                <option>Poland</option><option>Portugal</option><option>Romania</option>
-                <option>Slovakia</option><option>Slovenia</option><option>Spain</option>
-                <option>Sweden</option><option>United Kingdom</option><option>Other</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="checkout-form-section">
-            <div class="checkout-section-title">Payment Method</div>
-            <div class="checkout-payment-methods">
-              <div class="payment-option selected" id="pay-crypto" onclick="selectPayment(&#39;crypto&#39;)">
-                <div class="payment-option-icon">₿</div>
-                <div class="payment-option-label">Cryptocurrency</div>
-                <div class="payment-option-sub">BTC · ETH · USDT · 300+ coins</div>
-              </div>
-              <div class="payment-option" id="pay-bank" onclick="selectPayment(&#39;bank&#39;)">
-                <div class="payment-option-icon">🏦</div>
-                <div class="payment-option-label">Bank Transfer</div>
-                <div class="payment-option-sub">SEPA · EU only</div>
-              </div>
-            </div>
-            <div id="crypto-info" style="margin-top:16px;background:rgba(184,146,42,0.06);border:1px solid rgba(184,146,42,0.2);border-radius:4px;padding:14px 16px;font-size:11px;color:var(--text-muted);line-height:1.8;">
-              ₿ Wallet address provided on order confirmation. Supported: BTC, ETH, USDT, and 300+ other coins via NOWPayments.
-            </div>
-            <div id="bank-info" style="display:none;margin-top:16px;background:rgba(13,31,53,0.04);border:1px solid rgba(13,31,53,0.1);border-radius:4px;padding:14px 16px;font-size:11px;color:var(--text-muted);line-height:1.8;">
-              🏦 SEPA bank transfer details provided on order confirmation. EU accounts only. Payment must clear before dispatch.
-            </div>
-          </div>
-
-          <div class="checkout-form-section">
-            <div class="checkout-section-title">Research Confirmation</div>
-            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;">
-              <input type="checkbox" id="co-confirm" style="margin-top:3px;accent-color:var(--navy);">
-              <span style="font-size:11px;color:var(--text-muted);line-height:1.8;">I confirm I am an independent researcher purchasing these compounds for research purposes only. I understand these products are not for human or animal consumption and I accept full responsibility for their use in accordance with applicable regulations in my jurisdiction.</span>
-            </label>
-          </div>
-
-          <div id="co-error" style="display:none;background:rgba(200,50,50,0.08);border:1px solid rgba(200,50,50,0.25);border-radius:4px;padding:14px 16px;font-size:11px;color:rgba(180,40,40,0.9);margin-bottom:16px;"></div>
-          <button class="checkout-submit-btn" onclick="submitOrder()">Place Order →</button>
-        </div>
-
-        <div>
-          <div class="checkout-summary">
-            <div class="checkout-summary-title">Order Summary</div>
-            <div id="checkout-summary-items"></div>
-            <div class="checkout-summary-total">
-              <span>Total</span>
-              <span id="checkout-summary-total">€0</span>
-            </div>
-            <div style="margin-top:16px;font-size:9px;color:var(--text-muted);line-height:1.8;border-top:1px solid rgba(13,31,53,.08);padding-top:14px;">
-              ✓ Dispatched within 2–3 business days<br>
-              ✓ Discreet packaging<br>
-              ✓ Certificate of Analysis available on request<br>
-              ✓ Personalised dosing card included
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="checkout-footer">
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
-        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
-        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
-        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
-        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
-        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
-        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
-        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
-        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer></div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
-     PAGE: ORDER CONFIRMATION
-══════════════════════════════════════ -->
-<div id="page-order-confirm" class="page">
-  <div class="inner-page">
-    <div class="page-content" style="padding-top:80px;">
-      <div class="order-confirm-box">
-        <div class="order-confirm-icon">✓</div>
-        <h1 class="order-confirm-title">Order <strong>Received</strong></h1>
-        <p class="order-confirm-sub">Thank you — your order has been received and is being prepared. You will receive a confirmation email shortly with your payment details and tracking information.</p>
-        <div class="order-ref" id="order-ref-display">UL-000000</div>
-        <p style="font-size:11px;color:var(--text-muted);line-height:1.9;margin-bottom:28px;">Payment details will be sent to your email. If you provided a Telegram username, we'll message you there too. For any questions, contact us directly.</p>
-        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-          <a href="https://t.me/Exirdnaultra" class="btn-primary" style="text-decoration:none;">Message on Telegram →</a>
-          <span class="btn-outline" onclick="showPage(&#39;home&#39;)" style="cursor:pointer;">Back to Home</span>
-        </div>
-      </div>
-    </div>
-    <div id="order-confirm-footer">
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;products&#39;)">All Products</a></li>
-        <li><a onclick="showPage(&#39;protocols-page&#39;)">Protocols</a></li>
-        <li><a onclick="showPage(&#39;recon-guide&#39;)">Reconstitution Guide</a></li>
-        <li><a onclick="showPage(&#39;track-order&#39;)">Track Your Order</a></li>
-        <li><a onclick="showPage(&#39;affiliate&#39;)">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;faq&#39;)">FAQ</a></li>
-        <li><a onclick="showPage(&#39;contact-page&#39;)">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage(&#39;terms&#39;)">Terms &amp; Conditions</a></li>
-        <li><a onclick="showPage(&#39;privacy&#39;)">Privacy Policy</a></li>
-        <li><a onclick="showPage(&#39;shipping&#39;)">Shipping Policy</a></li>
-        <li><a onclick="showPage(&#39;returns&#39;)">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer></div>
-  </div>
-</div>
-
-<script>
-// ══════════════════════════════════════
-// COMPOUND DATA
-// ══════════════════════════════════════
-const compounds = [
-  {
-    id:'bpc157', name:'BPC-157', price:'€70', size:'10mg',
-    category:'Healing Peptide', admin:'Subcutaneous, oral, or intranasal',
-    tagline:'The gold standard healing peptide. Versatile, well-researched, and reliably effective.',
-    overview:'BPC-157 is a synthetic pentadecapeptide derived from a protective protein found in gastric juice. It is one of the most extensively studied peptides for its regenerative, healing and anti-inflammatory properties. It supports gut health, accelerates tissue repair, and protects against oxidative damage, making it a cornerstone compound in healing and recovery protocols.',
-    mechanism:'Enhances angiogenesis (formation of new blood vessels) and upregulates growth hormone receptors. Modulates nitric oxide production → promotes tissue repair and reduces inflammation. Acts on the dopaminergic and serotonergic systems, contributing to neuroprotective and mood-stabilising effects.',
-    profile:[['Peptide Name','BPC-157'],['Full Name','Body Protection Compound'],['Sequence','Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val'],['Molecular Weight','1419.5 Da'],['Format','Lyophilised powder'],['Administration','SubQ, oral, or intranasal']],
-    benefits:['Accelerates tendon, ligament, and muscle healing','Promotes gut health — protective in IBS, gastric ulcers, and leaky gut','Reduces inflammation in soft tissues','Supports injury repair and post-surgical recovery','Neuroprotective properties — may support nerve regeneration','Safe profile with no observed toxicity at high doses in research']
-  },
-  {
-    id:'tb500frag', name:'TB-500 Frag', price:'€80', size:'10mg',
-    category:'Healing & Recovery',admin:'Subcutaneous injection',
-    tagline:'The recovery athlete\'s peptide. Systemic healing, reduced inflammation, improved flexibility.',
-    overview:'TB-500 Fragment is a synthetic version of the active region of Thymosin Beta-4, specifically the actin-binding domain (amino acids 17–23). This fragment retains the primary therapeutic benefits of the full chain while being more cost-effective. It promotes systemic healing, reduces inflammation, and improves tissue flexibility and mobility.',
-    mechanism:'Upregulates actin — a cell-building protein essential for wound healing. Promotes cell migration and proliferation. Has anti-inflammatory effects by downregulating inflammatory cytokines. Stimulates formation of new blood vessels in damaged tissue.',
-    profile:[['Peptide Name','TB-500 Fragment'],['Active Region','Ac-LKKTETQ (residues 17–23)'],['Molecular Weight','~900 Da'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Systemic healing — works throughout the body, not just injection site','Reduces muscle and joint inflammation','Improves flexibility and range of motion','Accelerates recovery from injury and exercise','Promotes hair growth in some research models','Well-tolerated with a long half-life']
-  },
-  {
-    id:'tb4', name:'TB-4', price:'€90', size:'10mg',
-    category:'Healing & Recovery', admin:'Subcutaneous injection',
-    tagline:'The full-chain Thymosin Beta-4. Comprehensive healing and immune modulation.',
-    overview:'TB-4 (Thymosin Beta-4) is a naturally occurring 43-amino acid peptide found in nearly all human cells. It plays a central role in tissue repair, immune regulation, and cell survival. As the full-chain version, it offers broader biological activity than the fragment, including stronger immune-modulating effects.',
-    mechanism:'Sequesters actin monomers, regulating cytoskeletal dynamics critical to cell migration and wound repair. Activates the AKT/PI3K signalling pathway — a key anti-apoptotic (cell survival) pathway. Upregulates stem cell homing to sites of injury.',
-    profile:[['Peptide Name','Thymosin Beta-4'],['Chain Length','43 amino acids'],['Molecular Weight','4963 Da'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Broad-spectrum tissue repair and wound healing','Stronger immune modulation versus the fragment form','Anti-inflammatory and anti-apoptotic (cell-protective) effects','Promotes stem cell activation and homing','Cardioprotective properties noted in cardiac research','Supports hair follicle activation']
-  },
-  {
-    id:'retatrutide', name:'Retatrutide', price:'€135', size:'10mg',
-    category:'Metabolic & GLP-1', admin:'Subcutaneous injection',
-    tagline:'Triple-receptor agonist. The frontier of metabolic research.',
-    overview:'Retatrutide is a novel triple agonist targeting GLP-1, GIP, and glucagon receptors simultaneously. This triple mechanism makes it one of the most potent metabolic peptides in current research, demonstrating significant effects on body weight, visceral fat, and metabolic markers. It represents the cutting edge of peptide-based metabolic science.',
-    mechanism:'GLP-1 agonism → reduces appetite, slows gastric emptying, improves insulin sensitivity. GIP agonism → enhances insulin secretion and fat metabolism. Glucagon agonism → increases energy expenditure and hepatic fat metabolism. Combined → synergistic effect on visceral adipose tissue reduction.',
-    profile:[['Peptide Name','Retatrutide (LY3437943)'],['Receptor Targets','GLP-1R, GIPR, GcgR (triple agonist)'],['Molecular Weight','~4.7 kDa'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Significant reduction in body weight and visceral fat','Improves insulin sensitivity and glucose metabolism','Reduces hepatic steatosis (fatty liver)','Cardiovascular risk marker improvement','One of the most potent metabolic peptides in current research','Novel triple-receptor mechanism with synergistic effects']
-  },
-  {
-    id:'ghkcu50', name:'GHK-Cu', price:'€55', size:'50mg',
-    category:'Anti-Ageing & Skin', admin:'Subcutaneous or topical',
-    tagline:'Copper peptide. Nature\'s regenerative signal.',
-    overview:'GHK-Cu (Glycine-Histidine-Lysine-Copper) is a naturally occurring human plasma peptide that declines significantly with age. It plays a central role in tissue remodelling, wound healing, and anti-ageing. It activates over 4,000 human genes and is one of the most research-backed anti-ageing peptides available.',
-    mechanism:'Copper chelation facilitates enzymatic processes critical to collagen synthesis. Activates antioxidant enzymes (SOD, catalase). Upregulates genes involved in tissue repair and downregulates genes associated with cancer and inflammation. Stimulates nerve cell growth and BDNF expression.',
-    profile:[['Peptide Name','GHK-Cu'],['Full Name','Glycyl-L-histidyl-L-lysine Copper(II)'],['Molecular Weight','340.4 Da (free peptide)'],['Format','Lyophilised powder'],['Administration','SubQ injection or topical'],['Vial Size','50mg']],
-    benefits:['Stimulates collagen and elastin synthesis','Potent antioxidant activity — reduces oxidative stress','Wound healing and tissue remodelling','Anti-inflammatory gene expression modulation','Neuroprotective — stimulates nerve growth factor','Hair follicle stimulation and growth']
-  },
-  {
-    id:'ghkcu100', name:'GHK-Cu 100mg', price:'€85', size:'100mg',
-    category:'Anti-Ageing & Skin', admin:'Subcutaneous or topical',
-    tagline:'Larger research quantity. Same exceptional compound.',
-    overview:'The 100mg vial of GHK-Cu offers greater value per milligram for researchers running extended protocols or higher-dose research. All the same mechanisms and benefits as the 50mg vial, in a larger research quantity.',
-    mechanism:'Copper chelation facilitates enzymatic processes critical to collagen synthesis. Activates antioxidant enzymes (SOD, catalase). Upregulates genes involved in tissue repair and downregulates genes associated with cancer and inflammation.',
-    profile:[['Peptide Name','GHK-Cu'],['Molecular Weight','340.4 Da'],['Format','Lyophilised powder'],['Administration','SubQ injection or topical'],['Vial Size','100mg']],
-    benefits:['Greater value per milligram for extended protocols','Stimulates collagen and elastin synthesis','Potent antioxidant activity','Anti-inflammatory gene expression modulation','Wound healing and tissue remodelling','Neuroprotective properties']
-  },
-  {
-    id:'cjcdac', name:'CJC-DAC', price:'€55', size:'50mg',
-    category:'Growth Hormone', admin:'Subcutaneous injection',
-    tagline:'Long-acting GHRH analogue. Sustained GH release.',
-    overview:'CJC-1295 with DAC (Drug Affinity Complex) is a modified version of Growth Hormone Releasing Hormone (GHRH). The DAC modification extends the half-life to approximately 8 days, allowing once or twice-weekly injections for sustained, physiological GH release. Commonly stacked with Ipamorelin for synergistic GH pulses.',
-    mechanism:'Binds to GHRH receptors on the pituitary gland → stimulates GH synthesis and secretion. DAC modification binds to albumin in the bloodstream → dramatically extends half-life. Results in elevated GH and downstream IGF-1 with physiological pulse patterns.',
-    profile:[['Peptide Name','CJC-1295 DAC'],['Half-Life','~8 days'],['Molecular Weight','3647.3 Da'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection'],['Vial Size','50mg']],
-    benefits:['Long-acting — once or twice weekly dosing','Sustained, physiological GH release','Promotes lean muscle mass and fat loss','Improves sleep quality','Anti-ageing via GH/IGF-1 axis stimulation','Stacks synergistically with Ipamorelin']
-  },
-  {
-    id:'ipamorelin', name:'Ipamorelin', price:'€50', size:'10mg',
-    category:'Growth Hormone', admin:'Subcutaneous injection',
-    tagline:'Selective GH secretagogue. Clean, targeted GH release.',
-    overview:'Ipamorelin is a selective growth hormone secretagogue and ghrelin receptor agonist. It stimulates GH release from the pituitary with high selectivity — notably without significantly increasing cortisol, prolactin, or ACTH, unlike older secretagogues. It is commonly stacked with CJC-1295 DAC for amplified GH pulse.',
-    mechanism:'Mimics ghrelin → binds to growth hormone secretagogue receptor (GHSR) → stimulates GH release from pituitary somatotrophs. High selectivity means minimal effect on cortisol or prolactin — cleaner GH release profile than GHRP-2 or GHRP-6.',
-    profile:[['Peptide Name','Ipamorelin'],['Class','Ghrelin mimetic / GHSR agonist'],['Half-Life','~2 hours'],['Molecular Weight','711.9 Da'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Selective GH release without cortisol or prolactin elevation','Improves body composition — promotes lean mass and fat loss','Enhances sleep quality and recovery','Anti-ageing effects via GH/IGF-1 axis','Well-tolerated with minimal side effects in research','Ideal partner for CJC-1295 DAC in GH stacks']
-  },
-  {
-    id:'thymosin', name:'Thymosin Alpha-1', price:'€120', size:'10mg',
-    category:'Immune Modulation', admin:'Subcutaneous injection',
-    tagline:'The immune system\'s master regulator.',
-    overview:'Thymosin Alpha-1 (Tα1) is a naturally occurring 28-amino acid peptide originally isolated from thymic tissue. It is a potent immune modulator used in clinical settings globally for conditions including hepatitis B and C, cancer, and immunodeficiency. It enhances both innate and adaptive immune responses and has significant antiviral properties.',
-    mechanism:'Activates dendritic cells and T-helper cells. Upregulates Toll-like receptor expression → enhances innate immune surveillance. Promotes Th1 cytokine response (IFN-γ, IL-2) → shifts immune balance toward cell-mediated immunity. Has direct antiviral activity through stimulation of interferon pathways.',
-    profile:[['Peptide Name','Thymosin Alpha-1 (Tα1)'],['Origin','Thymic peptide'],['Chain Length','28 amino acids'],['Molecular Weight','3108.4 Da'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Potent immune modulation — both innate and adaptive immunity','Antiviral activity — stimulates interferon production','Approved therapeutic agent in 35+ countries for hepatitis and cancer support','Anti-inflammatory without immunosuppression','Protective in sepsis models in research','Synergises with BPC-157 for gut-immune axis protocols']
-  },
-  {
-    id:'epithalon', name:'Epithalon', price:'€55', size:'10mg',
-    category:'Longevity & Telomere', admin:'Subcutaneous injection',
-    tagline:'The longevity peptide. Telomere activation and cellular rejuvenation.',
-    overview:'Epithalon (also Epitalon) is a synthetic tetrapeptide (Ala-Glu-Asp-Gly) derived from the naturally occurring polypeptide Epithalamin, produced by the pineal gland. It is one of the most studied longevity peptides, with research spanning over 35 years. Key actions include telomere elongation, antioxidant activation, and normalisation of circadian melatonin production.',
-    mechanism:'Activates telomerase enzyme → promotes telomere elongation, the primary mechanism of cellular lifespan extension. Regulates pineal gland function → normalises melatonin secretion and circadian rhythm. Upregulates antioxidant enzyme expression. Regulates p53 tumour suppressor expression.',
-    profile:[['Peptide Name','Epithalon (Epitalon)'],['Sequence','Ala-Glu-Asp-Gly'],['Molecular Weight','390.4 Da'],['Origin','Pineal gland derivative'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Telomerase activation — telomere elongation for cellular longevity','Normalises melatonin production and circadian rhythm','Potent antioxidant activity','Improves sleep quality and depth','Anti-tumour properties noted in long-term research','35+ years of research backing']
-  },
-  {
-    id:'motsc', name:'MoTS-C', price:'€95', size:'10mg',
-    category:'Mitochondrial & Metabolic', admin:'Subcutaneous injection',
-    tagline:'Mitochondria-derived. The metabolic revitaliser.',
-    overview:'MoTS-C (Mitochondrial Open Reading Frame of the 12S rRNA type-C) is a mitochondria-derived peptide encoded in mitochondrial DNA. It is considered a mitokine — a peptide that mediates cross-talk between mitochondria and other tissues. It plays a central role in metabolic regulation, stress resistance, and longevity, and has shown remarkable activity in restoring mitochondrial function.',
-    mechanism:'Translocates to the nucleus under metabolic stress → activates AMPK and suppresses mTOR → shifts metabolism to fat oxidation. Reduces reactive oxygen species (ROS) in mitochondria. Improves insulin sensitivity independent of weight loss. Regulates nuclear gene expression in response to mitochondrial signals.',
-    profile:[['Peptide Name','MoTS-C'],['Origin','Mitochondrial DNA (12S rRNA)'],['Chain Length','16 amino acids'],['Molecular Weight','2174.5 Da'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Activates AMPK — core metabolic and longevity pathway','Improves insulin sensitivity and glucose uptake','Increases fat oxidation and reduces visceral adiposity','Reduces mitochondrial ROS — protects against oxidative stress','Exercise mimetic properties — improves physical performance','Declines with age — supplementation may restore youthful mitochondrial function']
-  },
-  {
-    id:'ss31', name:'SS-31', price:'€195', size:'50mg',
-    category:'Mitochondrial Support', admin:'Subcutaneous injection',
-    tagline:'The mitochondrial membrane protector. Elite cellular energetics.',
-    overview:'SS-31 (Elamipeptide / Bendavia) is a mitochondria-targeted peptide that concentrates in the inner mitochondrial membrane. It is the most potent mitochondria-targeted antioxidant and bioenergetic compound currently in research, with clinical trials underway for heart failure, kidney disease, and ageing. It protects cristae architecture and restores ATP production in stressed and aged mitochondria.',
-    mechanism:'Selectively concentrates in the inner mitochondrial membrane (1000x cytoplasmic concentration) via electrostatic interaction with cardiolipin. Stabilises cardiolipin → preserves cristae structure → restores electron transport chain (ETC) efficiency. Reduces mitochondrial ROS production. Improves ATP synthesis in aged and stressed cells.',
-    profile:[['Peptide Name','SS-31 (Elamipeptide)'],['Also Known As','Bendavia, MTP-131'],['Sequence','D-Arg-Dmt-Lys-Phe-NH2'],['Molecular Weight','639.8 Da'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection'],['Vial Size','50mg']],
-    benefits:['Concentrates 1000x in inner mitochondrial membrane','Restores ATP production in aged and damaged mitochondria','Protects cristae architecture — the structural basis of ETC function','Reduces mitochondrial ROS without disrupting redox signalling','Improves exercise capacity and recovery in research models','Clinical trials underway for heart failure and chronic kidney disease']
-  },
-  {
-    id:'hcg', name:'HCG', price:'€30', size:'2000iu',
-    category:'Hormonal Support', admin:'Subcutaneous injection',
-    tagline:'Hormonal foundation support. The testosterone companion.',
-    overview:'Human Chorionic Gonadotropin (HCG) is a glycoprotein hormone that mimics Luteinizing Hormone (LH). In research contexts, it is used to support endogenous testosterone production and maintain testicular function. Weekly subcutaneous injection is the standard research administration protocol.',
-    mechanism:'Binds to LH receptors in the testes (Leydig cells) → stimulates testosterone synthesis and secretion. Maintains intratesticular testosterone levels. Preserves Leydig cell function and testicular volume. Supports spermatogenesis via indirect testosterone effects.',
-    profile:[['Compound Name','Human Chorionic Gonadotropin'],['Abbreviation','HCG'],['Class','Glycoprotein hormone'],['Molecular Weight','~36,700 Da'],['Format','Lyophilised powder'],['Vial Size','2000iu'],['Administration','Subcutaneous injection']],
-    benefits:['Maintains endogenous testosterone production','Preserves testicular volume and function','Supports Leydig cell health','Once-weekly dosing convenience','Synergises with hormone-modulating protocol stacks','Established research profile spanning decades']
-  },
-  {
-    id:'tesamorelin', name:'Tesamorelin', price:'€100', size:'20mg',
-    category:'Growth Hormone / GHRH', admin:'Subcutaneous injection (evening)',
-    tagline:'FDA-approved GHRH analogue. Targeted visceral fat reduction.',
-    overview:'Tesamorelin is a synthetic analogue of Growth Hormone Releasing Hormone (GHRH). It is unique among GH-axis peptides in having FDA approval (for HIV-related lipodystrophy) giving it one of the strongest evidence bases of any research peptide. It stimulates GH release with a physiological pulsatile pattern, making it favourable over exogenous GH.',
-    mechanism:'Binds pituitary GHRH receptors → stimulates GH synthesis and pulsatile secretion. Preserves normal GH feedback regulation (unlike exogenous GH). Downstream IGF-1 elevation → promotes fat metabolism, particularly visceral adipose tissue. Must be administered on an empty stomach for optimal bioavailability.',
-    profile:[['Peptide Name','Tesamorelin'],['Class','GHRH analogue'],['Regulatory Status','FDA-approved (lipodystrophy)'],['Half-Life','~26 minutes'],['Molecular Weight','5135.8 Da'],['Format','Lyophilised powder'],['Administration','SubQ injection — evening, empty stomach'],['Vial Size','20mg']],
-    benefits:['FDA-approved — highest evidence base of any GHRH analogue','Significant visceral fat reduction in research','Preserves physiological GH feedback — no suppression risk','Improves body composition and lipid profiles','Enhances sleep architecture via GH pulse timing','Must be administered on empty stomach for full efficacy']
-  },
-  {
-    id:'klow', name:'Klow Blend', price:'€195', size:'80mg',
-    category:'Multi-Peptide Blend', admin:'Subcutaneous injection',
-    tagline:'Four healing compounds. One precision-formulated blend.',
-    overview:'Klow is a proprietary multi-peptide blend combining four synergistic healing compounds: KPV (10mg), TB-500 Fragment (10mg), BPC-157 (10mg), and GHK-Cu (50mg). Each compound targets complementary aspects of tissue repair — inflammation, angiogenesis, cellular signalling, and antioxidant protection. Together they create a comprehensive healing environment greater than the sum of parts.',
-    mechanism:'KPV → anti-inflammatory via alpha-MSH receptor agonism (MC1R, MC3R) → downregulates NF-κB. BPC-157 → angiogenesis and nitric oxide modulation → tissue repair. TB-500 → actin upregulation → cell migration and wound healing. GHK-Cu → copper-mediated collagen synthesis and antioxidant enzyme activation.',
-    profile:[['Blend Name','Klow Multi-Peptide'],['KPV','10mg'],['TB-500 Fragment','10mg'],['BPC-157','10mg'],['GHK-Cu','50mg'],['Total Content','80mg'],['Format','Lyophilised powder'],['Administration','Subcutaneous injection']],
-    benefits:['Four synergistic healing compounds in one vial','Anti-inflammatory (KPV) + angiogenic (BPC-157) + structural repair (TB-500) + antioxidant (GHK-Cu)','Excellent value vs buying separately (saves ~€40 vs individual prices)','Single reconstitution for a comprehensive healing protocol','Ideal for injury recovery, post-surgical healing, and inflammation management','Simplified dosing — one injection for four compounds']
-  },
-  {
-    id:'bac', name:'Bacteriostatic Water', price:'€10', size:'10mL',
-    category:'Reconstitution Solution', admin:'For reconstitution use only',
-    tagline:'Essential for every protocol. Sterile, preserved, multi-dose safe.',
-    overview:'Bacteriostatic Water (BAC Water) is sterile water for injection containing 0.9% benzyl alcohol as a preservative. It is the required solvent for reconstituting all lyophilised peptide vials. The benzyl alcohol inhibits bacterial growth in the opened vial, allowing safe multi-dose use over extended periods. Do not substitute with plain sterile water or saline for multi-dose use.',
-    mechanism:'Benzyl alcohol (0.9%) acts as a bacteriostatic agent — inhibits bacterial growth without killing existing bacteria. Maintains sterility of the reconstituted peptide solution over multiple draw-downs. pH-adjusted to be compatible with all standard research peptides.',
-    profile:[['Product','Bacteriostatic Water'],['Preservative','0.9% Benzyl Alcohol'],['Volume','10mL per vial'],['pH','5.0 – 7.0'],['Storage','Room temperature, away from light'],['Use','Reconstitution of lyophilised peptides only']],
-    benefits:['Allows safe multi-dose use of reconstituted vials','Inhibits bacterial contamination','pH-compatible with all standard research peptides','10mL vial provides sufficient volume for multiple compounds','Essential for every research protocol']
-  }
-];
-
-// ══════════════════════════════════════
-// INIT — runs on load
-// ══════════════════════════════════════
-window.addEventListener('load', function() {
-  injectFooters();
-  renderProductGrid('home-products-grid');
-  renderProductGrid('full-products-grid');
-});
-
-// ══════════════════════════════════════
-// PAGE SYSTEM
-// ══════════════════════════════════════
-const FOOTER_HTML = `
-<div class="gold-line"></div>
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand-col">
-      <div class="footer-logo-name">Exir DNA Ultra Labs</div>
-      <p>Precision research peptides. Doctor-consulted protocols. Third-party tested compounds. Every researcher receives a personalised dosing card.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Shop</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage('products')">All Products</a></li>
-        <li><a onclick="showPage('protocols-page')">Protocols</a></li>
-        <li><a onclick="showPage('recon-guide')">Reconstitution Guide</a></li>
-        <li><a onclick="showPage('track-order')">Track Your Order</a></li>
-        <li><a onclick="showPage('affiliate')">Affiliate Programme</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Support</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage('faq')">FAQ</a></li>
-        <li><a onclick="showPage('contact-page')">Contact Us</a></li>
-        <li><a>Telegram Only</a></li>
-        <li><a>No Calls</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Policies</div>
-      <ul class="footer-links">
-        <li><a onclick="showPage('terms')">Terms & Conditions</a></li>
-        <li><a onclick="showPage('privacy')">Privacy Policy</a></li>
-        <li><a onclick="showPage('shipping')">Shipping Policy</a></li>
-        <li><a onclick="showPage('returns')">Return Policy</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Exir DNA Ultra Labs. All rights reserved.</div>
-    <div class="footer-disclaimer">All products are for research purposes only. Not intended for human or animal consumption. By purchasing you confirm you are an independent researcher acting on your own volition.</div>
-  </div>
-</footer>`;
-
-function injectFooters() {
-  const footerIds = ['home-footer','products-footer','product-detail-footer','protocols-page-footer','recon-footer','faq-footer','contact-page-footer','affiliate-footer','track-footer','terms-footer','privacy-footer','shipping-footer','returns-footer','blood-guide-footer','calculator-page-footer','checkout-footer','order-confirm-footer'];
-  footerIds.forEach(id => {
-    const el = document.getElementById(id);
-    if(el) el.innerHTML = FOOTER_HTML;
-  });
-}
-
-function showPage(pageId) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  const el = document.getElementById('page-' + pageId);
-  if(el) {
-    el.classList.add('active');
-    el.scrollTop = 0;
-  }
-}
-
-function toggleFaq(el) {
-  const item = el.parentElement;
-  item.classList.toggle('open');
-}
-
-// ══════════════════════════════════════
-// RENDER PRODUCT GRIDS
-// ══════════════════════════════════════
-function renderProductGrid(containerId) {
-  const container = document.getElementById(containerId);
-  if(!container) return;
-  container.innerHTML = compounds.map(c => `
-    <div class="product-card">
-      <div onclick="showProductDetail('${c.id}')" style="flex:1;cursor:pointer;">
-        <div class="product-name">${c.name}</div>
-        <div class="product-info">${c.category}</div>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;">
-        <div onclick="showProductDetail('${c.id}')" style="cursor:pointer;">
-          <div class="product-price">${c.price}</div>
-          <div class="product-size">${c.size}</div>
-        </div>
-        <button onclick="addToCart('${c.id}');event.stopPropagation();" title="Add to cart" style="background:var(--gold);border:none;color:var(--navy);width:32px;height:32px;border-radius:2px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">+</button>
-        <div class="product-arrow" onclick="showProductDetail('${c.id}')" style="cursor:pointer;">›</div>
-      </div>
-    </div>
-  `).join('');
-}
-
-// ══════════════════════════════════════
-// PRODUCT DETAIL
-// ══════════════════════════════════════
-function showProductDetail(id) {
-  const c = compounds.find(x => x.id === id);
-  if(!c) return;
-
-  document.getElementById('product-detail-content').innerHTML = `
-    <div class="page-hero-eyebrow">${c.category}</div>
-    <h1 class="page-hero-title"><strong>${c.name}</strong></h1>
-    <p class="page-hero-sub">${c.tagline}</p>
-  `;
-
-  document.getElementById('product-detail-body').innerHTML = `
-    <div class="product-detail-grid">
-      <div class="product-detail-left">
-        <div class="detail-meta-grid">
-          <div class="detail-meta-item"><div class="detail-meta-label">Category</div><div class="detail-meta-value">${c.category}</div></div>
-          <div class="detail-meta-item"><div class="detail-meta-label">Format</div><div class="detail-meta-value">Lyophilised vial</div></div>
-          <div class="detail-meta-item"><div class="detail-meta-label">Vial Size</div><div class="detail-meta-value">${c.size}</div></div>
-          <div class="detail-meta-item"><div class="detail-meta-label">Administration</div><div class="detail-meta-value">${c.admin}</div></div>
-        </div>
-        <div class="detail-price-box">
-          <div><div class="detail-price-label">Research Price</div><div class="detail-price-size">${c.size} vial</div></div>
-          <div class="detail-price-value">${c.price}</div>
-        </div>
-        <div style="display:flex;gap:12px;">
-          <button class="btn-add-cart" id="add-cart-btn-${c.id}" onclick="addToCart('${c.id}')">Add to Cart</button>
-        </div>
-        <div style="margin-top:10px;">
-          <span class="btn-primary" onclick="showPage('contact-page')" style="display:block;text-align:center;font-size:9px;padding:10px;">Prefer to Enquire → Contact Us</span>
-        </div>
-        <div style="margin-top:16px;font-size:10px;color:var(--text-muted);line-height:1.7;font-style:italic;opacity:.7;">For research purposes only. By enquiring you confirm you are an independent researcher.</div>
-      </div>
-      <div class="product-detail-right">
-        <div class="detail-section">
-          <div class="detail-section-title">Overview</div>
-          <div class="detail-overview">${c.overview}</div>
-        </div>
-        <div class="detail-section">
-          <div class="detail-section-title">Mechanism of Action</div>
-          <div class="mechanism-box">${c.mechanism}</div>
-        </div>
-        <div class="detail-section">
-          <div class="detail-section-title">Peptide Profile</div>
-          <div class="detail-profile-grid">
-            ${c.profile.map(r=>`<div class="detail-profile-row"><span class="detail-profile-key">${r[0]}</span><span class="detail-profile-val">${r[1]}</span></div>`).join('')}
-          </div>
-        </div>
-        <div class="detail-section">
-          <div class="detail-section-title">Key Features & Benefits</div>
-          <ul class="detail-benefits">
-            ${c.benefits.map(b=>`<li>${b}</li>`).join('')}
-          </ul>
-        </div>
-      </div>
-    </div>
-  `;
-
-  showPage('product-detail');
-  const pd = document.getElementById('page-product-detail');
-  if(pd) pd.scrollTop = 0;
-}
-
-// ══════════
-// ══════════════════════════════════════
-// PEPTIDE CALCULATOR
-// ══════════════════════════════════════
-function calcDose() {
-  const vialMg  = parseFloat(document.getElementById('calc-vial-mg').value);
-  const bacMl   = parseFloat(document.getElementById('calc-bac-ml').value);
-  const doseMcg = parseFloat(document.getElementById('calc-dose-mcg').value);
-  const resultEl = document.getElementById('calc-result');
-  const errorEl  = document.getElementById('calc-error');
-  const volEl    = document.getElementById('calc-volume');
-  const unitsEl  = document.getElementById('calc-units');
-  resultEl.style.display = 'none';
-  errorEl.style.display  = 'none';
-  if (!vialMg || !bacMl || !doseMcg || vialMg <= 0 || bacMl <= 0 || doseMcg <= 0) return;
-  const concMcgPerMl = (vialMg * 1000) / bacMl;
-  const volumeMl = doseMcg / concMcgPerMl;
-  if (volumeMl > bacMl) {
-    errorEl.style.display = 'block';
-    errorEl.textContent = 'Dose exceeds total vial content. Please check your inputs.';
-    return;
-  }
-  const syringeUnits = (volumeMl * 100).toFixed(1);
-  resultEl.style.display = 'block';
-  volEl.textContent = volumeMl.toFixed(3);
-  unitsEl.textContent = '= ' + syringeUnits + ' units on a 100-unit insulin syringe  ·  Concentration: ' + (concMcgPerMl/1000).toFixed(2) + 'mg/mL';
-}
-
-</script>
-<script>
-// ══════════════════════════════════════
-// INIT
-// ══════════════════════════════════════
-document.addEventListener('DOMContentLoaded', function() {
-  injectFooters();
-  renderProductGrid('home-products-grid');
-  renderProductGrid('full-products-grid');
-});
-
-// ══════════════════════════════════════
-// CART SYSTEM
-// ══════════════════════════════════════
-let cart = [];
-let selectedPayment = 'crypto';
-
-function parsePrice(str) {
-  return parseFloat(str.replace(/[^0-9.]/g, '')) || 0;
-}
-
-function addToCart(id) {
-  const c = compounds.find(x => x.id === id);
-  if(!c) return;
-  const existing = cart.find(x => x.id === id);
-  if(existing) {
-    existing.qty++;
-  } else {
-    cart.push({ id: c.id, name: c.name, price: c.price, size: c.size, qty: 1 });
-  }
-  updateCartUI();
-  // Flash the add button
-  const btn = document.getElementById('add-cart-btn-' + id);
-  if(btn) {
-    btn.textContent = '✓ Added';
-    btn.classList.add('added');
-    setTimeout(() => { btn.textContent = 'Add to Cart'; btn.classList.remove('added'); }, 1500);
-  }
-  openCart();
-}
-
-function removeFromCart(id) {
-  cart = cart.filter(x => x.id !== id);
-  updateCartUI();
-}
-
-function changeQty(id, delta) {
-  const item = cart.find(x => x.id === id);
-  if(!item) return;
-  item.qty += delta;
-  if(item.qty <= 0) removeFromCart(id);
-  else updateCartUI();
-}
-
-function getTotal() {
-  return cart.reduce((sum, item) => sum + parsePrice(item.price) * item.qty, 0);
-}
-
-function updateCartUI() {
-  const count = cart.reduce((s, i) => s + i.qty, 0);
-  const countEl = document.getElementById('cart-count');
-  if(countEl) {
-    countEl.textContent = count;
-    countEl.classList.toggle('hidden', count === 0);
-  }
-
-  const emptyEl = document.getElementById('cart-empty');
-  const itemsEl = document.getElementById('cart-items');
-  const footerEl = document.getElementById('cart-footer');
-
-  if(cart.length === 0) {
-    if(emptyEl) emptyEl.style.display = 'block';
-    if(itemsEl) itemsEl.innerHTML = '';
-    if(footerEl) footerEl.style.display = 'none';
-  } else {
-    if(emptyEl) emptyEl.style.display = 'none';
-    if(footerEl) footerEl.style.display = 'block';
-    if(itemsEl) {
-      itemsEl.innerHTML = cart.map(item => `
-        <div class="cart-item">
-          <div class="cart-item-info">
-            <div class="cart-item-name">${item.name}</div>
-            <div class="cart-item-size">${item.size}</div>
-          </div>
-          <div class="cart-qty">
-            <button class="cart-qty-btn" onclick="changeQty('${item.id}',-1)">−</button>
-            <div class="cart-qty-num">${item.qty}</div>
-            <button class="cart-qty-btn" onclick="changeQty('${item.id}',1)">+</button>
-          </div>
-          <div class="cart-item-price">${item.qty > 1 ? item.qty + '×' : ''}${item.price}</div>
-          <button class="cart-remove" onclick="removeFromCart('${item.id}')">✕</button>
-        </div>
-      `).join('');
-    }
-    const total = getTotal();
-    const totalEl = document.getElementById('cart-total');
-    if(totalEl) totalEl.textContent = '€' + total.toFixed(2);
-  }
-}
-
-function openCart() {
-  document.getElementById('cart-overlay').classList.add('open');
-}
-
-function closeCart() {
-  document.getElementById('cart-overlay').classList.remove('open');
-}
-
-function handleOverlayClick(e) {
-  if(e.target === document.getElementById('cart-overlay')) closeCart();
-}
-
-function selectPayment(method) {
-  selectedPayment = method;
-  document.getElementById('pay-crypto').classList.toggle('selected', method === 'crypto');
-  document.getElementById('pay-bank').classList.toggle('selected', method === 'bank');
-  document.getElementById('crypto-info').style.display = method === 'crypto' ? 'block' : 'none';
-  document.getElementById('bank-info').style.display = method === 'bank' ? 'block' : 'none';
-}
-
-function goToCheckout() {
-  closeCart();
-  // Populate summary
-  const summaryEl = document.getElementById('checkout-summary-items');
-  const summaryTotalEl = document.getElementById('checkout-summary-total');
-  if(summaryEl) {
-    summaryEl.innerHTML = cart.map(item => `
-      <div class="checkout-summary-item">
-        <span class="checkout-summary-item-name">${item.name} ${item.qty > 1 ? '×'+item.qty : ''}</span>
-        <span class="checkout-summary-item-price">€${(parsePrice(item.price)*item.qty).toFixed(2)}</span>
-      </div>
-    `).join('');
-  }
-  if(summaryTotalEl) summaryTotalEl.textContent = '€' + getTotal().toFixed(2);
-  showPage('checkout');
-}
-
-function submitOrder() {
-  const fname = document.getElementById('co-fname').value.trim();
-  const lname = document.getElementById('co-lname').value.trim();
-  const email = document.getElementById('co-email').value.trim();
-  const address = document.getElementById('co-address').value.trim();
-  const city = document.getElementById('co-city').value.trim();
-  const country = document.getElementById('co-country').value;
-  const confirmed = document.getElementById('co-confirm').checked;
-  const errorEl = document.getElementById('co-error');
-
-  errorEl.style.display = 'none';
-
-  if(!fname || !lname) { errorEl.textContent = 'Please enter your full name.'; errorEl.style.display = 'block'; return; }
-  if(!email || !email.includes('@')) { errorEl.textContent = 'Please enter a valid email address.'; errorEl.style.display = 'block'; return; }
-  if(!address || !city || !country) { errorEl.textContent = 'Please complete your shipping address.'; errorEl.style.display = 'block'; return; }
-  if(!confirmed) { errorEl.textContent = 'Please confirm the research use declaration to proceed.'; errorEl.style.display = 'block'; return; }
-  if(cart.length === 0) { errorEl.textContent = 'Your cart is empty.'; errorEl.style.display = 'block'; return; }
-
-  // Generate order reference
-  const ref = 'UL-' + Date.now().toString(36).toUpperCase().slice(-6);
-  document.getElementById('order-ref-display').textContent = ref;
-
-  // Send order email via mailto (opens client) — in production replace with API call
-  const orderLines = cart.map(i => `${i.name} x${i.qty} — ${i.price}`).join('\n');
-  const body = `Order Reference: ${ref}\n\nName: ${fname} ${lname}\nEmail: ${email}\nAddress: ${address}, ${city}, ${country}\nPayment: ${selectedPayment === 'crypto' ? 'Cryptocurrency' : 'Bank Transfer'}\n\nOrder:\n${orderLines}\n\nTotal: €${getTotal().toFixed(2)}`;
-  const telegram = document.getElementById('co-telegram').value.trim();
-  const bodyFull = body + (telegram ? '\nTelegram: ' + telegram : '');
-
-  // Open email to sales
-  window.location.href = 'mailto:sales@exirdna.com?subject=New Order ' + encodeURIComponent(ref) + '&body=' + encodeURIComponent(bodyFull);
-
-  // Clear cart and show confirmation
-  cart = [];
-  updateCartUI();
-  showPage('order-confirm');
-}
-
-</script>
-
-</body></html>
+</footer></div></div></div></body></html>
